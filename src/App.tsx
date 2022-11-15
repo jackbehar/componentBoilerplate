@@ -3,6 +3,7 @@ import "./App.css";
 import { IconDometic } from "./constants/imageConstants";
 import LocalSwitch from "./components/atoms/LocalSwitch/LocalSwitch";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import ControlledLocalSwitch from "./components/atoms/LocalSwitch/ControlledLocalSwitch";
 
 function App() {
   const [switchState, setSwitchState] = useState(false);
@@ -15,12 +16,25 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={IconDometic} className="App-logo" alt="logo" />
-        <h1>Test</h1>
-        <LocalSwitch
-          value={switchState}
-          onPress={() => setSwitchState(!switchState)}
-        />
       </header>
+      <div className="container">
+        <div className="content">
+          <h3>Switch</h3>
+          <div className="component">
+            <LocalSwitch
+              value={switchState}
+              onPress={() => setSwitchState(!switchState)}
+            />
+            <div className="textLine">
+              <h4>status:</h4>
+              <p>{` ${switchState}`}</p>
+            </div>
+          </div>
+          <div className='component'>
+            <ControlledLocalSwitch name='controlledSwitch'/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,19 +1,59 @@
 .App {
   text-align: center;
+  background-color: slategrey;
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 10vmin;
   pointer-events: none;
 }
+
 .App-header {
-  background-color: lightgray;
-  min-height: 100vh;
+  background-color: black;
+  min-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: black;
-  padding-top: 10vh;
+  padding-top: 5vh;
+}
+
+.container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2vh;
+  height: 85vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  background-color: lightgrey;
+  box-Shadow: '1px 2px 9px #FFFFFF';
+  margin: '4em';
+  padding: '1em';
+  height: auto;
+  padding: 1vh;
+}
+
+.component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width:100%
+}
+
+.textLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
 }
