@@ -30,9 +30,9 @@ function App() {
               <p>{` ${switchState}`}</p>
             </div>
           </div>
-          <div className='component'>
+          {/* <div className='component'>
             <ControlledLocalSwitch name='controlledSwitch'/>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
