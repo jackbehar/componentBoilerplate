@@ -1,4 +1,4 @@
-import colors from '../../../assets/colors/colors';
+import colors from '../../../assets/colors/tokens/colors';
 import {ThemeVariant} from '../../../types/theme';
 
 const BORDER_WIDTH = 1;
