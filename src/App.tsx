@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { IconDometic } from "./constants/imageConstants";
 import LocalSwitch from "./components/atoms/LocalSwitch/LocalSwitch";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet } from "react-native";
 // import LocalText from "./components/atoms/LocalText/LocalText";
 
 function App() {

@@ -1,12 +1,11 @@
 import i18n from 'i18next';
-import * as RNLocalize from 'react-native-localize';
 import {initReactI18next} from 'react-i18next';
 import en from '../language/en.json';
 import de from '../language/de.json';
 import fr from '../language/fr.json';
 import es from '../language/es.json';
 
-const getDeviceLanguage = RNLocalize.getLocales()[0].languageCode;
+const getDeviceLanguage = 'en'
 function formatLanguageResource(data: object) {
   return Object.fromEntries(
     Object.entries(data).map(([key, value]) => [key, {translation: value}]),
