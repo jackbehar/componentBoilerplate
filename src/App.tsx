@@ -3,7 +3,7 @@ import "./App.css";
 import { IconDometic } from "./constants/imageConstants";
 import LocalSwitch from "./components/atoms/LocalSwitch/LocalSwitch";
 import { StyleSheet } from "react-native";
-// import LocalText from "./components/atoms/LocalText/LocalText";
+import LocalText from "./components/atoms/LocalText/LocalText";
 
 function App() {
   const [switchState, setSwitchState] = useState(false);
@@ -31,9 +31,9 @@ function App() {
             </div>
           </div>
           <div className='component'>
-            {/* <LocalText color='ACCENT_PRIMARY_REGULAR' size='BodyM'>
+            <LocalText color='ACCENT_PRIMARY_REGULAR' size='BodyM'>
               {'TEST TEXT'}
-            </LocalText> */}
+            </LocalText>
           </div>
         </div>
       </div>

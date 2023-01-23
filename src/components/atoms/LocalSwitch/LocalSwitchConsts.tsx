@@ -10,19 +10,25 @@ const SWITCH_WIDTH = 10;
 const SWITCH_HEIGHT = 16;
 
 function PRIMARY_CONTAINER_COLORS(theme: ThemeVariant) {
-  return [colors[theme].background, colors[theme].primary];
+  return [
+    colors[theme].LAYOUT_BACKGROUND,
+    colors[theme].ACCENT_PRIMARY_REGULAR,
+  ];
 }
 
 function DISABLE_PRIMARY_CONTAINER_COLORS(theme: ThemeVariant) {
-  return [colors[theme].disabled, colors[theme].background];
+  return [colors[theme].LAYOUT_BACKGROUND, colors[theme].LAYOUT_DISABLED];
 }
 
 function PRIMARY_CONTAINER_BORDER_COLORS(theme: ThemeVariant) {
-  return [colors[theme].primary, colors[theme].primary];
+  return [
+    colors[theme].ACCENT_PRIMARY_REGULAR,
+    colors[theme].ACCENT_PRIMARY_REGULAR,
+  ];
 }
 
 function DISABLE_PRIMARY_CONTAINER_BORDER_COLORS(theme: ThemeVariant) {
-  return [colors[theme].disabled, colors[theme].disabled];
+  return [colors[theme].LAYOUT_DISABLED, colors[theme].LAYOUT_DISABLED];
 }
 
 function PRIMARY_CONTAINER_COLOR_DATA(theme: ThemeVariant) {
@@ -44,19 +50,25 @@ function getPrimaryContainerColors(theme: ThemeVariant, disabled?: boolean) {
 }
 
 function SWITCH_COLORS(theme: ThemeVariant) {
-  return [colors[theme].primary, colors[theme].background];
+  return [
+    colors[theme].ACCENT_PRIMARY_REGULAR,
+    colors[theme].LAYOUT_BACKGROUND,
+  ];
 }
 
 function DISABLE_SWITCH_COLORS(theme: ThemeVariant) {
-  return [colors[theme].disabled, colors[theme].disabled];
+  return [colors[theme].LAYOUT_DISABLED, colors[theme].LAYOUT_DISABLED];
 }
 
 function SWITCH_BORDER_COLORS(theme: ThemeVariant) {
-  return [colors[theme].primary, colors[theme].background];
+  return [
+    colors[theme].ACCENT_PRIMARY_REGULAR,
+    colors[theme].LAYOUT_BACKGROUND,
+  ];
 }
 
 function DISABLE_SWITCH_BORDER_COLORS(theme: ThemeVariant) {
-  return [colors[theme].background, colors[theme].disabled];
+  return [colors[theme].LAYOUT_DISABLED, colors[theme].LAYOUT_BACKGROUND];
 }
 
 function SWITCH_COLOR_DATA(theme: ThemeVariant) {
