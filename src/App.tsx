@@ -30,9 +30,10 @@ function App() {
               <p>{` ${switchState}`}</p>
             </div>
           </div>
-          <div className='component'>
-            <LocalText color='ACCENT_PRIMARY_REGULAR' size='BodyM'>
-              {'TEST TEXT'}
+          <h3>Text</h3>
+          <div className="component">
+            <LocalText color="ACCENT_PRIMARY_REGULAR" size="SubheadingL">
+              {"TEST TEXT"}
             </LocalText>
           </div>
         </div>
