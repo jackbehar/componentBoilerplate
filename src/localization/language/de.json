@@ -1,0 +1,1307 @@
+{
+  "login": {
+    "common": {
+      "success": "Success",
+      "failure": "Failed",
+      "failedToUpdate": "Failed to update. something went wrong please try again.",
+      "somethingWentWrong": "Something went wrong. Please try again."
+    },
+    "rules": {
+      "passwordConditions": "The password do not satisify the conditions",
+      "passwordRequired": "Password is required",
+      "passwordMatch": "The passwords do not match",
+      "verificationRequired": "Verification is required",
+      "emailRequired": "Email is required",
+      "emailNotValid": "Email is not valid",
+      "serialNotValid": "Not a valid serial number"
+    },
+    "forgotPwd": {
+      "forgotPwd": "Passwort vergessen?",
+      "forgotPwdTitle": "Passwort zurücksetzen",
+      "enterEmail": "Keine Sorge. Das Passwort kann ganz einfach zurückgesetzt werden. \n\n Bitte geben Sie die E-mail ein, mit der Sie sich registriert haben. In Kürze werden Sie eine E-mail erhalten, um ihr Passwort zurückzusetzen.\n\nBitte überprüfen Sie ggf. ihren Spam-Ordner falls Sie keine E-mail innerhalb der nächsten 15 Minuten erhalten.",
+      "send": "Gesendet",
+      "mailSent": "E-mail gesendet",
+      "mailSentText": "Soon you will receive an email to reset your password. \n\nPlease remember to check your spam or junk folder if you can’t see the email in your inbox within the next 15 minutes."
+    },
+    "signUp": {
+      "createAccount": "Account erstellen",
+      "verify": "Passwort bestätigen",
+      "signUp": "Erstellen",
+      "haveAccount": "Haben Sie bereits einen Account? ",
+      "passwordValid": "Mindestens 8 Zeichen, mindestens einen Kleinbuchstaben, einen Großbuchstaben und ein Sonderzeichen. Erlaubte\n Sonderzeichen sind: #, $, -, !, @, %, &, /, (, ), ?, +, * \nBeispiel: Tomyroy@",
+      "awesome": "Almost there!",
+      "userAccount": "Eine Verifikations-email wurde an Sie gesendet.",
+      "emailReceived": "I got the email and verified.",
+      "resendVerification": "Send verification again.",
+      "dometicMarketing": " Dometic´s Terms & Conditions.",
+      "more": "mehr",
+      "less": "weniger",
+      "dometicMarketingText": "Ich stimme zu",
+      "moreData": "Ich möchte exklusive Angebote und aktuelle Informationen über Dometic erhalten. Über e-mail, Telefon, SMS, Push-Notification, Popups in der App und anderen elektronischen Möglichkeiten. Ihre persönlichen Informationen werden sicher von uns verwahrt und nicht für Marketing-Zwecke an Dritte weitergegeben.",
+      "showOffers": "Ja, Ich möchte über Angebote und Dienstleistungen informiert werden.",
+    },
+    "gateway": {
+      "gateWay": "gateway",
+      "enterGateway": "Produkt auswählen",
+      "qrcode": "QR-Code",
+      "scanAgain": "Erneut Scannen",
+      "serialNumber": "Seriennummer",
+      "serialFormat": "Das Format der Seriennummer ist wie folgend: YWW XXXXX",
+      "serialnumber": "Seriennummer",
+      "email": "E-mail",
+      "connect": "Verbinden",
+      "scan": "Scannen des QR-Codes",
+      "stopScan": "Scannen stoppen",
+      "or": "Oder"
+    },
+    "login": {
+      "welcome": "Wilkommen  zurück!",
+      "logIn": "Einloggen",
+      "email": "E-mail",
+      "password": "Passwort",
+      "forgotPwd": "Haben Sie ihr Passwort vergessen? ",
+      "signUp": "Registrieren"
+    },
+    "resetPwd": {
+      "resetPwd": "Passwort zurücksetzen?",
+      "selectDetails": "Bitte geben Sie ihre Email Adresse ein um ein neues Passwort zu erhalten",
+      "resetPass": "um ihr Passwort per E-mail zurückzusetzen",
+      "userName": "Benutzername/E-mail",
+      "email": "E-mail",
+      "send": "Senden",
+      "haveAccount": "Haben Sie bereits einen Account? ",
+      "logIn": "Einloggen"
+    },
+    "resend": {
+      "resend": "Erneut senden verifikationscode",
+      "send": "Verifikationscode erneut senden",
+      "OK": "OK"
+    },
+    "promotion": {
+      "whatsnew": "Was ist neu..",
+      "checkbox": "Nicht erneut zeigen"
+    },
+    "scanningScreen": {
+      "searchText": "Suche nach nahen Produkten..",
+      "cloudConnect": "Verbinde mit der Cloud..",
+      "header": "Dometic Produkt auswählen",
+      "deviceFound": "Device found",
+      "selectDeviceText": "Please select the device to onboard.",
+      "qrCode": "QR Code",
+      "noDevice": "Kein Gerät gefunden",
+      "bleWifi": "Bitte stellen Sie sicher das Sie Bluetooth aktiviert haben",
+      "try": "Erneut versuchen",
+      "scanQr": "QR Code scannen",
+      "moveCamera": "Bitte bewegen Sie ihre Kamera über",
+      "deviceQr": "den QR-Code",
+      "scanningCode": "Code wird gescannt..",
+      "addProduct": "Produkt hinzufügen",
+      "cancelScan": "Scannen abbrechen",
+      "switchCloudTitle": "Es wurden keine Geräte in Ihrer Umgebung gefunden.",
+      "switchCloudMessage": "Würden Sie sich gerne über Mobile Daten verbinden?",
+      "cancel": "Abbrechen",
+      "yes": "Ja",
+      "OK": "OK",
+      "permissionDenied": "Zugriff auf Kamera wurde verweigert",
+      "OnboardAlertToUserTitle": "Kein Gerät mit Konto verbunden!",
+      "OnboardAlertToUserMessage": "Bitte verbinden Sie das Gerät mithilfe ihrer Bluetooth-Verbindung.",
+      "gatewayConnect": "Verbindung zum gateway herstellen...",
+      "onboardingScreenTitle": "ONBOARDING",
+      "scanCompleted": "Scan Completed",
+      "confirmProductInformation": "Confirm below the product information",
+      "next": "Next",
+      "qrBarCode": "QR/Bar code"
+    },
+    "brandScreen": {
+      "selectBrand": "Wählen Sie ihre Marke aus",
+      "or": "Oder"
+    }
+  },
+  "landing": {
+    "common": {
+      "ok": "OK",
+      "somethingWentWrongTryAgain": "Etwas ist schief gelaufen, bitte versuchen Sie es später erneut",
+      "updating": "Aktualisierung"
+    },
+    "dashboard": {
+      "title": "Dashboard"
+    },
+    "deviceManagement": {
+      "title": "DEVICE MANAGEMENT",
+      "addNewButtonText": "Add new",
+      "deviceName": "Device name",
+      "hullIDNumber": "MAC Address",
+      "manufacturer": "Manufacturer",
+      "productInformation": "Product Information",
+      "editDevice": "Edit device"
+    },
+    "onBoarding": {
+      "searchText": "Looking for nearby Bluetooth devices.\nPlease wait.",
+      "cloudConnect": "Connecting to cloud...",
+      "deviceFound": "Device found",
+      "selectDeviceText": "Please select the device to onboard.",
+      "noDevice": "No device found",
+      "bleMsg": "Please activate Bluetooth pairing on your device.",
+      "nameTitle": "NAME",
+      "searchAgain": "Search again",
+      "linkTitle": "LINK",
+      "zones": "Zones",
+      "configuration": "Configuration",
+      "help": "I need help",
+      "next": "Next",
+      "gatewayConnect": "Onboarding in progress...",
+      "onBoardingScreenTitle": "ONBOARDING",
+      "connectingDevice": "Connecting to device.\nPlease wait",
+      "success": {
+        "text": "Onboarding Successful!",
+        "hint": "Close this window to start exploring your app.",
+        "done": "Done"
+      },
+      "successAlready": {
+        "text": "Already OnBoarded!",
+        "hint": "Close this window to start exploring your app.",
+        "done": "Done"
+      },
+      "failed": {
+        "text": "Onboarding Failed!",
+        "hint": "It was not possible to configure your device. Please try again.",
+        "tryAgain": "Try again"
+      },
+      "loadingText": "Loading, please wait.",
+      "connectionRequired": {
+        "title": "Internet connection required",
+        "text": "Might be already onboarded, please turn on internet connection"
+      },
+      "setUpWifiNetwork": {
+        "type": "Manuell einrichten",
+        "networkStatus": "Mein Netzwerk ist nicht in der Liste",
+        "searchAgain": "Search again",
+        "Ok": "OK",
+        "next": "Next",
+        "SSID": "SSID",
+        "password": "Password",
+        "connectingMessage": "Device connecting to network."
+      },
+      "pairingError": {
+        "title": "Connection Error",
+        "text": "Please check the BLE connection is paired or not."
+      },
+      "wifiNetworkHelp": {
+        "networkHelpHeading": "Netzwerk nicht aufgeführt",
+        "helpText": "HELP",
+        "caseOne": "Das Netzwerk, das Sie verbinden möchten, muss 2,4 GHz sein.",
+        "caseTwo": "Stellen Sie sicher, dass das Netzwerk nicht ausgeblendet ist.",
+        "caseThree": "Stellen Sie sicher, dass Sie sich in der Nähe des Routers befinden."
+      },
+      "errors": {
+        "alreadyOnboardedTitle": "Device is already onboarded",
+        "alreadyOnboardedText": "Please contact device admin to access to it.",
+        "genericTitle": "Error",
+        "permissionDeniedText": "Permission request was denied",
+        "validationCheckText": "Gateway validation check failed",
+        "wifiErrorTitle": "Wifi network error",
+        "wifiErrorText": "The device could not connect to the given network. Please check your network settings."
+      },
+      "bluetoothPowerOff": {
+        "title": "Bluetooth is off",
+        "message": "Please turn on your bluetooth from mobile settings"
+      },
+      "wifiConfiguration": {
+        "compulsoryBleConnection": "You need to be connected via bluetooth to configure wifi in your device",
+        "alreadyConfigured": "Wifi is already configured in your device",
+        "loginRequired": "You need to login in order to configure wifi in your device",
+        "success": "Wifi Configured Successfully!",
+        "hint": "Now you can have a wifi connection with your device"
+      },
+      "emptyGatewayName": "Gateway name should not be empty",
+      "cannotOnboard": "You cannot onboard this device locally"
+    },
+    "offBoarding": {
+      "confirmation": "Confirmation",
+      "offBoardAlertMessage": "Are you sure you want to delete the product? You won’t be able to control it unless you onboard it again.",
+      "noBtnTitle": "No",
+      "yesBtnTitle": "Yes",
+      "failedText": "Offboarding failed",
+      "waitText": "You need to wait up to 3 minutes after onboarding to be able to offboard a device",
+      "loadingText": "Offboarding in progress, please wait"
+    },
+    "setting": {
+      "setting": "SETTINGS",
+      "account": "Meine Account-Einstellungen",
+      "network": "Netzwerkverbindung",
+      "nameAndPassword": "Benuztzername und Passwort",
+      "manageDevice": "Geräte verwalten",
+      "language": "Sprache",
+      "english": "English",
+      "german": "German",
+      "french": "French",
+      "spanish": "Spanish (US)",
+      "notification": "Benachrichtigungen",
+      "temperature": "Temperatur",
+      "climate": "Klima",
+      "power": "Energie",
+      "tank": "Panzer",
+      "favoriteAndAutomation": "Favorite and Automation",
+      "ags": "AGS",
+      "mechanical": "Mechanisch",
+      "warranty": "Gerät für Garantie registrieren",
+      "version": "Version 1.7.5",
+      "logOut": "Abmelden",
+      "celsius": "°C",
+      "fahrenheit": "°F",
+      "upgradeFirmware": "Upgrade Firmware",
+      "updateFirmwarePath": "gw0ota",
+      "internetState": "No Internet Connection",
+      "yourFirmwareIsUpToDate": "Your firmware is up to date",
+      "updateFirmware": "gw0ver",
+      "capsY": "Y",
+      "success": "Erfolg",
+      "firmwareUpdatedSuccessfully": "Firmware updated successfully.",
+      "upgradeFirmwareDownload": "Upgrade firmware by clicking download button.",
+      "download": "Download",
+      "ok": "OK",
+      "firmwareUpdated": "Firmware Updated",
+      "firmware": "Firmware",
+      "upgrade": "Upgrade",
+      "tryAgain": "Try again",
+      "upgradeFailed": "Upgrade firmware has failed. Please try again.",
+      "zoneManagement": "Zone Management",
+      "home": "Home",
+      "notificationSettings": "Notification Settings",
+      "deviceManagement": "Device Management",
+      "appSettings": "App Settings",
+      "support": "Support",
+      "about": "About",
+      "logout": "Logout"
+    },
+    "zoneManagement": {
+      "allHeader": "All Zones",
+      "limitedText": "Limited to 4 Zones only",
+      "zone": "Select Number",
+      "newZoneName": "New Zone Name",
+      "confirmation": "Confirmation!",
+      "deleteText": "Are you sure you want to delete",
+      "renameZone": "Rename Zone",
+      "zonePresent": "Zone name already present",
+      "zoneValidation": "Zone name is not in correct format",
+      "numChar": "/10 character",
+      "addZoneText": "Add Zone",
+      "edit": "Edit",
+      "select": "Select",
+      "rename": "Rename",
+      "z": "Z",
+      "cancel": "Cancel",
+      "save": "Save",
+      "delete": "Yes, delete it",
+      "added": "added",
+      "deleted": "deleted",
+      "renamed": "renamed as",
+      "emptyZoneName": "Zone Name can not be empty",
+      "retry": "Retry"
+    },
+    "climate": {
+      "climate": "Klima",
+      "mode": "Climate Mode",
+      "acMode": "AC Mode",
+      "acFan": "AC Fan Speed",
+      "fan": "Fan Speed",
+      "light": "AC Licht",
+      "energy": "Energy",
+      "temperature": "Temperatur",
+      "power": "Energie",
+      "celsius": "°C",
+      "fahrenheit": "°F",
+      "inside": "Innen",
+      "outside": "Außen",
+      "ac": "AC",
+      "heater": "Heizung",
+      "heaterFanSpeed": "Heizung Lüftergeschwindigkeit",
+      "waterLevel": "Hot Water Level",
+      "acmode": "CLIMATE MODE",
+      "fanspeed": "FAN SPEED",
+      "aclight": "AC Licht",
+      "waterheater": "THERME",
+      "heaterfanspeed": "HEATER FAN SPEED",
+      "energyheater": "ENERGY",
+      "off": "Aus",
+      "eco": "Eco",
+      "hot": "Heiß",
+      "vent": "Umluft",
+      "high": "Hoch",
+      "powerOnAc": "Power ON AC?",
+      "heaterIsOn": "\nThe Heater is ON, powering ON the AC will turn OFF the Heater.\n\nDo you want to continue?",
+      "cancel": "Cancel",
+      "yes": "Yes",
+      "powerOnHeater": "Power ON Heater?",
+      "acIsOn": "\nAC is ON, powering ON the Heater will turn OFF the AC.\n\nDo you want to continue?",
+      "applyChanges": "Applying changes...",
+      "climateAGS": "Climate AGS",
+      "airConditioner": "Air Conditioner",
+      "furnace": "Furnace",
+      "heatPump": "Heat Pump",
+      "heatSource": "Heat Source",
+      "scheduledAt": "Scheduled At",
+      "scheduler": "Scheduler",
+      "apply": "Apply",
+      "temperatureScheduler": "Temperature",
+      "scheduledDays": "Scheduled Days",
+      "climateEcoModifier": "Eco Modifier",
+      "ecoModifierInfo": "This is a low power option to conserve \n energy. The compressor speed will be \n limited to a preselected limit",
+      "climateSleepModifier": "Sleep Modifier",
+      "sleepModifierInfo": "This is a low power option to conserve \n energy. The compressor speed will be \n limited to a preselected limit",
+      "autoFanMode": "Auto-fan Mode",
+      "autoFanModeInfo": "This is a low power option to conserve \n energy. The compressor speed will be \n limited to a preselected limit",
+      "am": "AM",
+      "pm": "PM",
+      "lastUpdatedOn": "Last updated on"
+    },
+    "device": {
+      "room": "Room",
+      "device": "Device",
+      "favorite": "Favorite",
+      "sortBy": "SORT BY",
+      "ac": "Klimaanlage",
+      "power": "Energie",
+      "climate": "Klima",
+      "bed2": "Bed 2",
+      "heater": "Heizung",
+      "salon": "Salon",
+      "battery": "Battery",
+      "starterBattery": "Starter Battery",
+      "houseBattery": "Aufbaubatterie",
+      "tank": "Tank",
+      "freshWaterTank": "Fresh Water",
+      "greyWaterTank": "Grey Water",
+      "zoneControl": "ZONE CONTROL",
+      "zone1": "ZONE 1",
+      "zone2": "ZONE 2",
+      "zone3": "ZONE 3",
+      "mostlyUsed": "Mostly used",
+      "recentlyUsed": "Recently used",
+      "frequentlyUsed": "Frequently used",
+      "chargeBattery": "Charge Battery!",
+      "fillTank": "FillFresh Tank!",
+      "emptyTank": "Empty Gray Tank!",
+      "notConnected": "Not Connected..",
+      "tempOutOfRange": "Temp out of range!",
+      "celsius": "°C",
+      "fahrenheit": "°F",
+      "percentage": "%",
+      "successfulPairing": "Device On-Boarding Successful!",
+      "closeWindow": "Close this window and start exploring",
+      "dometicApp": "your Dometic app.",
+      "userGuide": "Interested in a short intro user guide,",
+      "please": "please",
+      "clickHere": "Click Here",
+      "checkBox": "Do not show this message again",
+      "placeHolder": "_ _",
+      "off": "OFF",
+      "lmc": "LMC",
+      "eriba": "ERIBA",
+      "outsideTemp": "Outside",
+      "connectNow": "Connect Now",
+      "BlownOut": "Blown Out",
+      "mechanical": "Mechanical",
+      "awning": "Awning",
+      "light": "Light",
+      "lights": "Lights",
+      "lightsTitle": "LIGHT",
+      "currentlyOn": "Currently ON",
+      "OK": "OK",
+      "AllOK": "All OK",
+      "blackWater": "Black Water",
+      "blackWaterLevel": "BLACK WATER LEVEL",
+      "black": "Black",
+      "lpgLevel": "LPG LEVEL",
+      "lpg": "LPG",
+      "grey": "Grey",
+      "greyWater": "Grey Water",
+      "greyWaterLevel": "GREY WATER LEVEL",
+      "fresh": "Fresh",
+      "freshWater": "Fresh Water",
+      "freshWaterLevel": "FRESH WATER LEVEL",
+      "fuel": "Fuel",
+      "fuelLevel": "FUEL LEVEL",
+      "oil": "Oil",
+      "oilLevel": "OIL LEVEL",
+      "liveWell": "Live Well",
+      "liveWellLevel": "LIVE WELL LEVEL",
+      "live": "Livewell",
+      "baitWell": "Bait Well",
+      "baitWellLevel": "BAIT WELL LEVEL",
+      "bait": "Baitwell",
+      "freshWaterTwo": "2nd Fresh Water",
+      "freshWaterLevelTwo": "2nd FRESH WATER LEVEL",
+      "blackWaterTwo": "2nd Black Water",
+      "blackWaterLevelTwo": "2nd BLACK WATER LEVEL",
+      "greyWaterTwo": "2nd Grey Water",
+      "greyWaterLevelTwo": "2nd GREY WATER LEVEL",
+      "lpgLevelTwo": "2nd LPG LEVEL",
+      "lpgTwo": "2nd LPG",
+      "tanksTitle": "TANKS",
+      "emptyBlackWater": "Empty Black Water Tank",
+      "updateFirmwareLanding": "Es ist eine neue Firmware verfügbar.Bitte versorgen Sie ihr Fahrzeug mit Spannung und drücken den Upgrade Button im Menü",
+      "updateFirmware": "Update Firmware",
+      "cancel": "Cancel",
+      "newFirmwareUpdate": "Neues Firmware Update",
+      "upgrade": "Upgrade",
+      "later": "Later",
+      "all": "Alle",
+      "devices": "Geräte",
+      "tanks": "Panzer",
+      "batteries": "Batteries",
+      "lmcFreshWater": "Süßwassertank",
+      "lmcGrayWater": "Grauwassertank",
+      "home": "Home",
+      "areas": "Areas",
+      "proride": "Proride",
+      "switching": "Switching",
+      "modes": "Modes",
+      "switchingScreenTitle": "SWITCHING",
+      "modesScreenTitle": "MODES",
+      "prorideScreenTitle": "PRORIDE",
+      "areasScreenTitle": "AREA LIGHT 01",
+      "home_bottomBar": "Home",
+      "colors_bottomBar": "Colors",
+      "schedule_bottomBar": "Timer",
+      "battery_bottomBar": "Battery",
+      "modes_bottomBar": "Modes",
+      "settings_bottomBar": "Settings"
+    },
+    "mechanical": {
+      "lidControl": "Lid Control",
+      "lidOpen": "Lid Open",
+      "lidClose": "Lid Close",
+      "bathFan": "Bath Fan",
+      "power": "Power",
+      "mechanical": "Mechanical",
+      "on": "ON",
+      "open": "Open",
+      "close": "Close",
+      "off": "OFF",
+      "galleyfan": "Galley Fan",
+      "fanSpeed": "FAN SPEED",
+      "lidOff": "Lid Off",
+      "lid": "Lid"
+    },
+    "trumaWaterHeater": {
+      "waterHeater": "Water Heater",
+      "truma": "Truma",
+      "off": "OFF",
+      "on": "ON",
+      "tank": "Tank",
+      "trumaWaterHeater": "TrumaWaterHeater",
+      "heater": "Heater",
+      "status": "Status",
+      "deCalcification": "Decalcification",
+      "apply": "Apply",
+      "ChangeMode": "MODUS ÄNDERN",
+      "mode": "Modus"
+    },
+    "room": {
+      "room": "Room",
+      "device": "Device",
+      "favorite": "Favorite",
+      "sortBy": "SORT BY",
+      "salon": "Salon",
+      "temperature": "Temperature",
+      "dimmer": "Dimmer",
+      "bed1": "Bed 1",
+      "kitchen": "Kitchen",
+      "zoneControl": "ZONE CONTROL",
+      "zone1": "ZONE 1",
+      "zone2": "ZONE 2",
+      "zone3": "ZONE 3",
+      "mostlyUsed": "Mostly used",
+      "recentlyUsed": "Recently used",
+      "frequentlyUsed": "Frequently used"
+    },
+    "favorite": {
+      "room": "Room",
+      "device": "Device",
+      "favorite": "Favorite",
+      "sortBy": "SORT BY",
+      "movieNight": "Movie Night",
+      "salon": "Salon",
+      "dimmer": "Dimmer",
+      "sunday": "Sunday",
+      "bed1": "Bed 1",
+      "bed2": "Bed 2",
+      "afternoonCooling": "Afternoon Cooling",
+      "salon1": "Salon 1",
+      "kitchen": "Kitchen",
+      "zoneControl": "ZONE CONTROL",
+      "zone1": "ZONE 1",
+      "zone2": "ZONE 2",
+      "zone3": "ZONE 3",
+      "mostlyUsed": "Mostly used",
+      "recentlyUsed": "Recently used",
+      "frequentlyUsed": "Frequently used"
+    },
+    "power": {
+      "houseBattery": "Aufbaubatterie",
+      "current": "Strom",
+      "time": "Time",
+      "controlInverter": "Wechselrichter Status",
+      "powerSource": "Spannungsversorgung",
+      "batteryVoltage": "Spannung",
+      "volt": "V",
+      "ampere": "A",
+      "hour": "hr",
+      "kiloWatt": "kW",
+      "charging": "Charging...",
+      "chargeBattery": "Charge Battery!",
+      "value": "230 ",
+      "battery": "Battery",
+      "fullyCharged": "Fully Charged!",
+      "inverter": "Inverter",
+      "off": "OFF",
+      "on": "ON",
+      "operatingMode": "Operating Mode",
+      "passThrough": "PassThrough",
+      "houseBatteryVoltage": "House Battery Voltage",
+      "houseBatteryVoltageValue": "12.5 V",
+      "loadWattage": "Load Wattage",
+      "loadWattageValue": "1.2 kW",
+      "chassisBatteryVoltage": "Chassis Battery Voltage",
+      "chassisBatteryVoltageValue": "13.4 V",
+      "generator": "Generator",
+      "charger": "Charger",
+      "ags": "AGS",
+      "predictiveData": "Predictive Data",
+      "chargerState": "Charger State",
+      "chargerCurrent": "Charger Current",
+      "acInputCurrent": "AC Input Current",
+      "acLoadCurrent": "AC Load Current",
+      "control": "Control",
+      "status": "Status",
+      "runtime": "Run Time",
+      "clearAgs": "Clear AGS",
+      "clearNow": "Clear Now",
+      "clearAgsNow": "Clear AGS - Success",
+      "batteryRemaining": "Battery Remaining (%)",
+      "hours": "HOUR",
+      "day": "DAY",
+      "week": "WEEK",
+      "month": "MONTH",
+      "measuredVoltage": "Measured Voltage",
+      "usageAnalysis": "Usage Analysis",
+      "alert": "Alert",
+      "notify": "Notify Me",
+      "discharging": "Discharging",
+      "idling": "Idling",
+      "mtcCharging": "Charging",
+      "voltageGraph": "Voltage Graph",
+      "alerts": "Alert",
+      "voltageBelow": "Battery Voltage Below",
+      "setLatency": "Set Latency",
+      "warnings": "Warnings"
+    },
+    "lpgTankSensor": {
+      "lpgTankSensor": "LPG Tank Sensor",
+      "batteryLevel": "Battery Level",
+      "bluetoothSignal": "Bluetooth Signal",
+      "macAddress": "MAC Address",
+      "softwareVersion": "Software Version",
+      "updatedTime": "Updated 20 mins ago"
+    },
+    "mtcClimate": {
+      "allClimate": "All Climate",
+      "power": "Power",
+      "fanSpeed": "Fan Speed",
+      "climateMode": "Climate Mode",
+      "eco": "Eco",
+      "quiet": "Quiet",
+      "compressorSpeed": "Compressor Speed",
+      "schduler": "Scheduler",
+      "status": "Status"
+    },
+    "shapeClimate": {
+      "sleep": "Sleep",
+      "sleepInfo": "The sleep function is only available in Cooling or Heating modes.",
+      "fanSpeedInfo": "Fan speed can't be selected manually in Automatic or Dehumidifying modes.",
+      "power": "Power",
+      "fanSpeed": "Fan Speed",
+      "climateMode": "Climate Mode",
+      "internal": "Internal",
+      "external": "External",
+      "lights": "Lights",
+      "timer": "Timer",
+      "status": "Status",
+      "scheduledAt": "scheduled at",
+      "timePassed": {
+        "title": "Time Passed",
+        "message": "Your selected time has been passed and cannot be set"
+      },
+      "apply": "Apply",
+      "internalBrightness": "Internal Brightness"
+    },
+    "awning": {
+      "stop": "Stop",
+      "extend": "Extend",
+      "extent": "Extent",
+      "yes": "Yes",
+      "ok": "ok",
+      "cancel": "Cancel",
+      "controller": "Controller",
+      "confirmation": "Confirmation!",
+      "engageBrake": "Please engage the parking brake",
+      "extendAdd": "\nPlease make sure the Awning is clear of all obstructions"
+    },
+    "viewOptions": {
+      "options": "View Options",
+      "tile": "Tile View",
+      "list": "List View",
+      "display": "Display",
+      "allDevice": "All Devices",
+      "connected": "Connected Devices",
+      "notConnected": "Non Connected Devices"
+    },
+    "lights": {
+      "allLightsOn": "ALL LIGHTS ON",
+      "allLightsOff": "ALL LIGHTS OFF"
+    },
+    "security": {
+      "security": "Security",
+      "tapHold": "Tap & Hold for 3sec",
+      "disarm": "Disarm",
+      "arm": "Arm",
+      "Disarmed": "Disarmed",
+      "Armed": "Armed",
+      "alert_Latency": "Alert Latency",
+      "theft_Alert": "Theft Alert",
+      "geo_Fencing": "Geo Fencing",
+      "doorWindow_Alert": "Door/Window Alert",
+      "radius_from_center": "Radius from center"
+    },
+    "tanks": {
+      "predictiveAnalytics": "Predictive Data",
+      "waterPump": "Water Pump",
+      "levels": "Levels",
+      "alert": "Alert",
+      "tankLevelAbove": "Tank Level Above",
+      "tankLevelBelow": "Tank Level Below",
+      "setLatency": "Latency",
+      "warning": "Warning",
+      "fillingLabel": "Filling(%)",
+      "utilizationLabel": "Utilization(%)"
+    },
+    "switching": {
+      "tile": "Switching",
+      "title": "SWITCHING",
+      "tabtitle": "switching"
+    },
+    "scenes": {
+      "scenes": "Scenes",
+      "rain": "Rain",
+      "freshAir": "Fresh Air",
+      "interiorLightsON": "Interior Lights ON",
+      "interiorLightsOFF": "Interior Lights OFF",
+      "exteriorLightsON": "Exterior Lights ON",
+      "exteriorLightsOFF": "Exterior Lights OFF",
+      "wake": "Wake",
+      "goodNight": "Good Night",
+      "isActive": "is now active",
+      "addSceneText": "Add Scenes",
+      "fanspeed": "Fan Speed"
+    },
+    "automation": {
+      "title": "Automation",
+      "automationListEmptyMsg": "Seems like you have not added any Automation yet. Get started!",
+      "addAutomation": "Add Automation"
+    },
+    "ags": {
+      "agsTitle": "AGS",
+      "autoCharger": "Auto Charger",
+      "quietTimeStart": "Quiet Time Start",
+      "quietTimeEnd": "Quiet Time Ends",
+      "selectedDays": "Selected Days",
+      "startVoltage": "Start Voltage",
+      "timeUnder": "Time Under",
+      "generatorExerciser": "Generator Exerciser",
+      "startTime": "Start Time",
+      "runTime": "Run Time",
+      "agsClimate": "Climate AGS",
+      "on": "ON",
+      "off": "OFF",
+      "info": "Defines the timer delay to start the AGS, \n when the Threshold voltage has been in \n that duration for so long",
+      "volts": "Volts",
+      "mins": "min",
+      "secs": "secs",
+      "ignitionOff": "Please turn the ignition OFF",
+      "generatorInfo": "Only run the generator in well ventilated area",
+      "am": "AM",
+      "pm": "PM"
+    },
+    "runTime": {
+      "mins": "mins",
+      "between": "Between ( 0-250 )",
+      "errorText": "Enter number between ( 0-250 )"
+    },
+    "miniBarOnboarding": {
+      "howToActivateBluetoothPairing": "How to activate Bluetooth pairing",
+      "onBoardingInstructionScreenTitle": "ACTIVATE PAIRING",
+      "saveForFutrueBtnText": "Save for future",
+      "bleInstructionStep1": "1. Turn ON the Minibar",
+      "bleInstructionStep2": "2. Open and keep the door open ",
+      "bleInstructionStep3": "Note that the pairing mode will last for 60 seconds.",
+      "heading": "HiPro Alpha C40G"
+    },
+    "areaLights": {
+      "scenes": "Scenes",
+      "preset": "Preset",
+      "addPreset": "Add preset",
+      "editPreset": "Edit preset"
+    },
+    "emptyView": {
+      "title": "Welcome to the dometic one",
+      "description": "Please add your device to start your experience",
+      "buttonText": "Add new device"
+    }
+  },
+  "notifications": {
+    "messages": {
+      "lm": {
+        "lowBattery": "Spannung sehr niedrig! Bitte laden Sie Ihre Batterie.",
+        "fullBattery": "Batterie voll aufgeladen!",
+        "insideTemp": "Innenraumtemperatur liegt unter 5°C.",
+        "freshWater": "Frischwassertank ist fast leer! Bitte füllen Sie diesen auf.",
+        "greyWater": "Abwassertank ist voll! Bitte ausleeren."
+      },
+      "sdb": {
+        "temperatureOn": "Temperature control ON",
+        "temperatureOff": "Temperature control OFF",
+        "mailboxDelivery": "Mail compartment opened",
+        "cabinetboxDelivery": "Cabinet compartment opened",
+        "bothDoorsDelivery": "Mail and cabinet compartment opened",
+        "connectionFailed": "Failed to connect over bluetooth."
+      }
+    }
+  },
+  "ERROR_KEYS": {
+    "PROPERTY_REQUIRED": {
+      "userName": "Benutzername eingeben",
+      "password": "Passwort eingeben",
+      "email": "E-mail eingeben",
+      "thingName": "ThingID nicht gegeben",
+      "thingType": "Thing type not found",
+      "domain": "Domäne nicht gefunden",
+      "externalId": "Externe ID nicht gefunden",
+      "PROPERTY_REQUIRED": "Fehlender Eintrag",
+      "name": "Property name is required"
+    },
+    "USER_NOT_FOUND": {
+      "userName": "Benutzer nicht gefunden."
+    },
+    "INVALID_LOGIN": {
+      "INVALID_LOGIN": "Log-in nicht möglich!"
+    },
+    "USER_USERNAME_EXISTS": {
+      "userName": "Nutzer besteht bereits"
+    },
+    "THING_TYPE_NOT_FOUND": {
+      "id": "Gerät ID nicht gefunden."
+    },
+    "USER_CONSENT_REQUIRED": {
+      "consent": "Bitte Akzeptieren Sie unsere Geschäftsbedingungen"
+    },
+    "THING_NOT_FOUND": {
+      "thingName": "Gerätedaten nicht gefunden",
+      "thingType": "Gerätetyp existiert nicht"
+    },
+    "INVALID_ARGUMENTS": {
+      "name": "Duplikat vorhanden",
+      "resources": "invalide Ressource",
+      "domain": "",
+      "INVALID_ARGUMENTS": "Eigenschaft verboten"
+    },
+    "NOT_AUTHORIZED": {
+      "NOT_AUTHORIZED": "Sie sind nicht für diese Operation zugelassen."
+    },
+    "USER_HAS_ROLE": {
+      "USER_HAS_ROLE": "Benutzer hat bereits diese Rolle"
+    },
+    "USER_HAS_TOO_MANY_ROLES": {
+      "USER_HAS_TOO_MANY_ROLES": "Benutzer hat zu viele Rollen"
+    },
+    "ROLE_NOT_FOUND": {
+      "ROLE_NOT_FOUND": "Rolle nicht gefunden"
+    },
+    "POLICY_LIMIT_EXCEEDED": {
+      "POLICY_LIMIT_EXCEEDED": "Zu viele IOT policies angeheftet"
+    },
+    "THING_EXISTS": {
+      "externalId": "Diese ID besteht bereits"
+    },
+    "NOT_AUTHORIZED_DOMAIN": {
+      "domain": "Sie sind nicht für diese Domäne autorisiert",
+      "NOT_AUTHORIZED_DOMAIN": "Sie sind nicht für diese Domäne autorisiert"
+    },
+    "NETWORK_ERROR": {
+      "NETWORK_ERROR": "Netzwerkfehler, bitte überprüfen Sie ihr Netzwerk"
+    },
+    "WENT_WRONG_ERROR": {
+      "WENT_WRONG_ERROR": "Something went wrong. Please try again later."
+    },
+    "UNKNOWN_KEY": {
+      "UNKNOWN_KEY": "Bitte überprüfen Sie ihr Netzwerk"
+    },
+    "DELIVERY_FAILURE": {
+      "DELIVERY_FAILURE": "Delivery Failure"
+    },
+    "NOT_FOUND": {
+      "macAddress": "MAC Addresse existiert nicht",
+      "userName": "Benutzer existiert nicht",
+      "NOT_FOUND": "Keine Aufzeichnungen gefunden"
+    },
+    "ALREADY_EXISTS": {
+      "gatewayId": "Gateway besteht bereits",
+      "ALREADY_EXISTS": "Besteht bereits"
+    },
+    "INVALID_ACTION": {
+      "INVALID_ACTION": "Confirmation code kann gerade nicht gesendet werden."
+    },
+    "ERROR_MAPPING": {
+      "loginFailedError": "Login failed,please try again later",
+      "notEnoughPermission": "You don't have enough permission to login",
+      "certificateDownloadError": "Failed to download certificate,please try again later"
+    }
+  },
+  "manageUserAccount": {
+    "account": "Konto",
+    "address": "Address",
+    "changePassword": "Passwort ändern",
+    "dataAndSecurity": "Daten und Sicherheit",
+    "deleteAccount": "Supprimer le compte",
+    "devicesOffBoardRequired": "Off-Board-Geräte erforderlich",
+    "editProfile": "Edit Profile",
+    "email": "E-mail",
+    "failure": "Failed",
+    "firstName": "Vorname",
+    "forgotFailureMailSent": "Reset link sending failed, please try again",
+    "forgotSuccessMailSent": "Reset link has been sent to your mail id successfully",
+    "lastName": "Nachname",
+    "manageAccount": "Manage your account",
+    "mobile": "Mobile",
+    "name": "Name",
+    "password": "Password",
+    "personalInformation": "Persönliche Informationen",
+    "pleaseOffBoardAllDevices": "Bitte deaktivieren Sie alle Geräte, bevor Sie Ihr Konto löschen",
+    "profile": "Profile",
+    "profileUpdateFailed": "Profilaktualisierung fehlgeschlagen",
+    "renew": "Renew",
+    "save": "Save",
+    "security": "SECURITY",
+    "settings": "SETTINGS",
+    "subscriptions": "Subscriptions",
+    "success": "Success",
+    "view/EditAccount": "View/Edit Account"
+  },
+  "guestPin": {
+    "save": "Save",
+    "guestListScreenTitle": "GUEST LIST",
+    "editguestScreenTitle": "EDIT GUEST LIST",
+    "addScreenTitle": "EDIT PIN",
+    "addNew": "Add New",
+    "guestPinLimitReached": "Guest PIN limit reached",
+    "notValidPinNameMessage": "Pin name should be atleast 3 characters",
+    "notValidPinMessage": "Pin code must be 4 digits",
+    "repeatedPinMessage": "Pin code already used",
+    "infoAlertTitle": "Info",
+    "wrongTimeScheduled": "To time should be always higher than From time plus 1 hour"
+  },
+  "masterPin": {
+    "title": "MASTER PIN",
+    "settingsTitle": "SET MASTER PIN",
+    "fourDigitPin": "PIN must be 4 digits",
+    "repeatedPin": "PIN already in use",
+    "reenterPin": "Re-enter your PIN",
+    "pinMismatch": "PINs don't match, Re-enter your PIN"
+  },
+  "coolerSettings": {
+    "coolerStatus": "Cooler status",
+    "scheduler": "Scheduler",
+    "scheduledAt": "Scheduled at",
+    "temperature": "Temperature"
+  },
+  "groups": {
+    "manageGroups": "MANAGE GROUPS",
+    "filterGroups": {
+      "headerTitle": "FILTER & GROUPS",
+      "manageGroups": "Manage groups",
+      "groupsHeader": "GROUPS"
+    },
+    "editGroup": {
+      "headerTitle": "MANAGE GROUPS"
+    },
+    "createUpdate": {
+      "headerTitle": "EDIT GROUP",
+      "nameLabel": "Name",
+      "iconLabel": "Icon",
+      "saveBtnTitle": "Save",
+      "groupInTheDashboardSwitchTitle": "Group in the Dashboard"
+    },
+    "GroupDetail": {
+      "groupedItems": "GROUPED ITEMS",
+      "manageItems": "Manage items",
+      "information": "INFORMATION",
+      "edit": "Edit",
+      "subGroups": "SUB GROUPS",
+      "manageSubGroups": "Manage sub groups",
+      "groupInTheDashboard": "Group in the Dashboard",
+      "name": "Name",
+      "icon": "Icon"
+    },
+    "groupSubGroupSelection": {
+      "headerTitleSubGroup": "SUB GROUPS",
+      "headerTitleGroups": "GROUPS",
+      "noGroup": "No Group",
+      "noSubGroup": "No sub group"
+    },
+    "managedGroupedItems": {
+      "subGroupHeading": "SUB GROUPS"
+    },
+    "createSubGroup": {
+      "headerTitle": "EDIT SUB GROUP",
+      "nameLabel": "Name"
+    },
+    "subGroupList": {
+      "headerTitle": "MANAGE SUB GROUPS"
+    }
+  },
+  "editDevice": {
+    "headerTitle": "EDIT DEVICE",
+    "headerTitle_SDB": "EDIT"
+  },
+  "ota": {
+    "alertErrorTitle": "Something went wrong!",
+    "alertErrorText": "An error has occurred during the firmware transfer, please try again later.",
+    "alertPermissionsTitle": "Permissions needed",
+    "alertPermissionsText": "You need read/write storage permissions to be able to update the firmaware.",
+    "wifiConnectTitle": "Connect to wifi network",
+    "wifiConnectText": "Your Android version does not allow to auto-connect to the Network. Please connect manually to:  ",
+    "wifiPasswordCopiedText": "Password has been copied to clipboard.",
+    "otaAlertTitle": "New update available",
+    "otaAlertText": "There's new firmware available for your devices, do you want to update it now?",
+    "noBtnTitle": "Don't notify me again",
+    "yesBtnTitle": "Check updates",
+    "laterBtnTitle": "Notify me later",
+    "cancelBtnTitle": "Cancel",
+    "okBtnTitle": "Ok",
+    "updateOkTitle": "Update successful",
+    "updateOkText": "The firmware has been updated succesfully.",
+    "transferOkTitle": "Transfer successful",
+    "transferOkText": "The device is installing the update and restarting.",
+    "updatedTitle":"All good!",
+    "updatedText":"You have the latest update.",
+    "checkingTitle":"Searching for updates",
+    "checkingText":"Please wait...",
+    "details": "Details",
+    "status": {
+      "download": "Download",
+      "downloading": "Downloading",
+      "update": "Update",
+      "starting": "Starting",
+      "failed": "failed",
+      "transfering": "Transfering",
+      "connecting": "Connecting",
+      "updated": "Updated"
+    },
+    "checkUpdates": {
+      "title": "CHECK UPDATES",
+      "checkUpdates": "Check Updates",
+      "notConnectedAlertTitle":"Device not connected",
+      "notConnectedAlertText":"You need to be connected to the device over Bluetooth to perform a firmware update"
+    }
+  },
+  "tiles": {
+    "reminderTitle": "Upgrade Firmware",
+    "reminderSubtitle": "New Firmware is available, please switch ON the RV power.\nGo to app settings for upgrade.",
+    "spinnerTitle": "Loading Appliances..."
+  },
+  "locationPermission": {
+    "locationNotSet": "Location permission is not set",
+    "bluetoothNotSet": "Bluetooth permission is not set",
+    "bluetoothAndLocationNotSet": "Location and bluetooth permissions are not set",
+    "title": "Application wants location Permission",
+    "message": "Application wants location Permission",
+    "buttonNeutral": "Ask Me Later",
+    "buttonNegative": "Cancel",
+    "buttonPositive": "OK"
+  },
+  "areaLight": {
+    "scheduler": "Scheduler",
+    "apply": "Apply",
+    "startsAt": "Starts at",
+    "endsAt": "Ends at",
+    "productInformation": "Product Information",
+    "name": "Name",
+    "edit": "Edit",
+    "notifications": "Notifications",
+    "advanced": "Advanced",
+    "about": "About",
+    "editAreaLight": "Edit Area Light",
+    "enterName": "Enter Name",
+    "emptyName": "Area light name should not be empty",
+    "nameIncludesSpecialCharacters": "Area light name cannot include special characters",
+    "save": "Save",
+    "timer": {
+      "timePassed": {
+        "tile": "Time Passed",
+        "message": "Your selected time has been passed and cannot be set"
+      },
+      "wrongEndTime": {
+        "title": "Wrong End Time",
+        "message": "End time cannot be less than start time"
+      }
+    },
+    "connectionError": {
+      "title": "Connection Error",
+      "message": "Device failed to connect. Please try again"
+    },
+    "lowBattery": {
+      "title": "Low Battery",
+      "message": "battery remaining"
+    },
+    "statusReport": {
+      "chargingIn": "Charging In",
+      "shuttingDown": "Shutting Down",
+      "Standby": "Stand By",
+      "supplyingOut": "Supplying Out"
+    }
+  },
+  "fullClimate": {
+    "apply": "Apply",
+    "modal": {
+      "switchCapability": {
+        "decline": "NO",
+        "accept": "YES"
+      }
+    },
+    "fan": "Fan",
+    "capabilities": {
+      "power": {
+        "title": "Power",
+        "modalTitle": "Are you sure you want to turn {{state}} the System?",
+        "options": {
+          "off": "OFF",
+          "on": "ON"
+        }
+      },
+      "airFlow": {
+        "title": "Status",
+        "description": "Description",
+        "options": {
+          "comfort": "Comfort",
+          "airQuality": "Air quality",
+          "energySaving": "Energy saving",
+          "quiet": "Quiet",
+          "humidity": "Humidity",
+          "storage": "Storage"
+        }
+      },
+      "lights": {
+        "title": "Lights"
+      },
+      "scheduler": {
+        "title": "Scheduler"
+      },
+      "sleep": {
+        "title": "Sleep"
+      },
+      "autoOn": {
+        "title": "Auto ON (Awake)"
+      },
+      "autoOff": {
+        "title": "Auto OFF (Sleep)"
+      },
+      "internalLights": {
+        "title": "Internal Lights"
+      },
+      "internalLightBrightness": {
+        "title": "Internal Light Brightness"
+      },
+      "externalLights": {
+        "title": "External Lights"
+      },
+      "ventLights": {
+        "title": "Vent Lights"
+      },
+      "away": {
+        "title": "Away"
+      },
+      "fanSpeed": {
+        "title": "Fan Speed",
+        "description": "Fan speed description.",
+        "options": {
+          "sleep": "Sleep",
+          "storage": "Storage",
+          "turbo": "Turbo",
+          "auto": "Auto",
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High"
+        }
+      },
+      "fanMode": {
+        "title": "Mode",
+        "options": {
+          "auto": "Auto",
+          "cooling": "Cooling",
+          "heating": "Heating",
+          "dry": "Dry",
+          "ventilation": "Ventilation"
+        }
+      }
+    },
+    "temperature": {
+      "temperature": "Temperature",
+      "inside": "Inside",
+      "target": "Target temperature",
+      "targetWithUnit": "Target temperature | {{unit}}"
+    },
+    "airQuality": "Air Quality",
+    "target": "Target",
+    "climate": "Climate",
+    "waterHeater": {
+      "on": "ON",
+      "off": "OFF",
+      "boost": "BOOST",
+      "title": "Water heater",
+      "next": "Next",
+      "start": "Start",
+      "heatingUp": "Heating up",
+      "back": "Back",
+      "options": {
+        "title": "Options",
+        "set": "Set",
+        "quickStart": "Quick start | ECO - 30 min",
+        "cancel": "Cancel"
+      },
+      "modes": {
+        "title": "Mode",
+        "selectMode": "Select a mode",
+        "eco": "ECO",
+        "normal": "Normal",
+        "boost": "Boost"
+      },
+      "timer": "Timer",
+      "alwaysOn": "Always ON"
+    },
+    "waterHeaterTitle": "Water Heater",
+    "climateScreen": "Climate",
+    "bottomTab": {
+      "control": "Control",
+      "advanced": "Advanced",
+      "schedule": "Schedule",
+      "settings": "Settings"
+    },
+    "save": "Save",
+    "settings": {
+      "deviceInfo": "Device information",
+      "name": "Name"
+    },
+    "deviceInfo": {
+      "updateSuccesfull": "Device name has been changed succesfully",
+      "error": {
+        "productName": "Product name",
+        "emptyName": "Product name should not be empty",
+        "minimumLength": "The product name should have a minimum length of three characters"
+      }
+    },
+    "edit": "Edit",
+    "advancedScreen": {
+      "itemHeader": {
+        "title": "History",
+        "dropdownTitle": "Detail"
+      },
+      "itemSubtitles": {
+        "temperature": "Track Temperature",
+        "airQuality": "Track Air Quality"
+      }
+    },
+    "scheduleScreen": {
+      "switchTitle": "Scheduler",
+      "autoOn": "Auto ON (Awake)",
+      "autoOff": "Auto OFF (Sleep)",
+      "everyDay": "Everyday",
+      "autoTemperature": "Temperature",
+      "status": "Status",
+      "time": "Time",
+      "repeat": "Repeat",
+      "editAutoOn": "Edit Auto ON",
+      "editAutoOff": "Edit Auto OFF",
+      "weekDays": "Weekdays",
+      "updateSuccesfull": "Schedule has been updated succesfully",
+      "selectADay": "Select one or more days from the list of weekdays"
+    },
+    "cardScheduler": {
+      "edit": "Edit",
+      "everyday": "Everyday"
+    },
+    "minutesDuration": "{{count}} min",
+    "minutesDuration_pluar": "{{count}} minutes",
+    "hoursDuration": "{{count}} hour",
+    "hoursDuration_plural": "{{count}} hours"
+  },
+  "settings": {
+    "deviceInformation": "Device Information",
+    "name": "Name",
+    "edit": "Edit",
+    "advanced": "Advanced",
+    "wifiSetting": "WiFi Setting",
+    "macAddress": "MAC Address",
+    "checkUpdates": "Checking Updates",
+    "delete": "Delete"
+  },
+  "sensors": {
+    "deviceInformation": "DEVICE INFORMATION",
+    "advanced": "ADVANCED",
+    "name": "Name",
+    "edit": "Edit",
+    "zoneNumber": "Zone Number",
+    "bluetooth": "Bluetooth",
+    "alertThreshold": "Alert Threshold",
+    "region": "Region",
+    "tankSize": "Tank Size",
+    "tankLevelUnit": "Tank Level Units",
+    "save": "Save",
+    "alert": "Alert",
+    "alert_Latency": "Alert Latency",
+    "macNumber": "MAC Address",
+    "softwareVersion": "Software Version",
+    "ClimateSensor": "Climate Sensor",
+    "ZoneNumber": "19",
+    "Connected": "Connected",
+    "EnterName": "Enter Name",
+    "EnterZoneNumber": "Enter Zone Number",
+    "DometicLPGTankSensor": "Dometic LPG Tank Sensor",
+    "Sweden": "Sweden",
+    "TankSize": "1000gal Horizontal",
+    "Percentage": "Percentage",
+    "AlertThreshold": "20%",
+    "AlertLatency": "5 Min",
+    "softwareVersionVal": "0.0.35",
+    "macNumberVal": "1C-1B-0DC-34",
+    "Maindoor": "Main door",
+    "LPGTankSensor": "LPG Tank Sensor",
+    "EDITDEVICE": "EDITDEVICE",
+    "Next": "Next",
+    "HeaderName": "NAME",
+    "HeaderLink": "LINK"
+  },
+  "apollo": {
+    "productName": "Product name",
+    "model": "Model",
+    "sku": "SKU",
+    "serialNumber": "Serial number",
+    "pnc": "PNC",
+    "floor_count": "Floor {{count}}",
+    "floor": "Floor",
+    "room_count": "Room {{count}}",
+    "room": "Room",
+    "add": "Add",
+    "edit": "Edit",
+    "minibarInformation": "Minibar Information"
+  }
+}

@@ -47,6 +47,7 @@ module.exports = {
                   "react-native-reanimated/plugin",
                   "babel-plugin-react-native-web",
                   "@babel/plugin-proposal-export-namespace-from",
+                  "@babel/plugin-proposal-class-properties"
                 ],
               },
             ],
@@ -71,6 +72,7 @@ module.exports = {
   resolve: {
     alias: {
       "react-native$": "react-native-web",
+      "react-native-linear-gradient": "react-native-web-linear-gradient",
     },
     extensions: [".ts", ".tsx", ".web.js", ".js", ".jsx"],
   },
