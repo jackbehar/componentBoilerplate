@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import "./App.css";
 import { IconDometic } from "./constants/imageConstants";
 import { rules } from "./core/validation/localValidation";
+import colors from './assets/colors/tokens/colors';
 import translations from "./localization/config/translationHelper";
 import LocalSwitch from "./components/atoms/LocalSwitch/LocalSwitch";
 import LocalText from "./components/atoms/LocalText/LocalText";
@@ -12,6 +13,9 @@ import Spacer from "./components/atoms/Spacer/Spacer";
 import LocalTextInput from "./components/atoms/LocalTextInput/LocalTextInput";
 import ControlledTextInput from "./components/atoms/LocalTextInput/ControlledTextInput";
 import i18n from "./localization/config/i18n";
+import { useAppSelector } from "./hook/useAppSelector";
+import { useAppDispatch } from "./hook/useAppDispatch";
+import { setTheme } from "./store/theme/themeRedux";
 interface FormState {
   email: string;
   password: string;
@@ -22,9 +26,13 @@ const initialFormState: Readonly<FormState> = {
   password: "",
 };
 
+
 function App() {
   const [switchState, setSwitchState] = useState(false);
   const [textInput, setTextInput] = useState("");
+
+  const dispatch = useAppDispatch();
+  const theme = useAppSelector(state => state.theme.theme)
 
   const { control, formState, getValues, handleSubmit } = useForm<FormState>({
     defaultValues: initialFormState,
@@ -46,13 +54,26 @@ function App() {
     [handleSubmit]
   );
 
+  const handleThemeChange = (event) => {
+    console.log(event.target.value);
+    dispatch(setTheme(event.target.value))
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={IconDometic} className="App-logo" alt="logo" />
+        <Spacer size={20}/>
+        <select defaultValue={theme} onChange={handleThemeChange}>
+          <option value="dark">dark</option>
+
+          <option value="light">light</option>
+
+          <option value="legacy">legacy</option>
+        </select>
       </header>
       <div className="container">
-        <div className="content">
+        <div className="content" style={{backgroundColor:colors[theme].LAYOUT_BACKGROUND}}>
           <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
             Switch
           </LocalText>
