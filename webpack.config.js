@@ -65,6 +65,10 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new webpack.EnvironmentPlugin({ JEST_WORKER_ID: null }),
     new webpack.DefinePlugin({ process: { env: {} } }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+      __DEV__: process.env.NODE_ENV !== 'production' || true,
+    }),
   ],
   stats: {
     children: true,
