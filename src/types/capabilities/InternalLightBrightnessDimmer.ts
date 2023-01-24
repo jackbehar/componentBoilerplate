@@ -1,0 +1,4 @@
+export enum INTERNAL_LIGHT_BRIGHTNESS_DIMMER {
+  FULL = 100,
+  MEDIUM = 50,
+}

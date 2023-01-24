@@ -2,6 +2,7 @@
  * Store config file, structure the store.
  */
 import {combineReducers} from 'redux';
+import settingReducer from '../settings/settings-reducer';
 import {themeReducer} from '../theme/themeRedux';
 
 /* Redux: Root Reducer
@@ -15,6 +16,7 @@ const rootReducer = (state: any, action: any) => {
 
 const appReducer = combineReducers({
   theme: themeReducer,
+  setting: settingReducer,
 });
 
 export default rootReducer;

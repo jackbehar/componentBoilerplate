@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import "./App.css";
 import { IconDometic } from "./constants/imageConstants";
 import { rules } from "./core/validation/localValidation";
-import colors from './assets/colors/tokens/colors';
+import colors from "./assets/colors/tokens/colors";
 import translations from "./localization/config/translationHelper";
 import LocalSwitch from "./components/atoms/LocalSwitch/LocalSwitch";
 import LocalText from "./components/atoms/LocalText/LocalText";
@@ -16,6 +16,13 @@ import i18n from "./localization/config/i18n";
 import { useAppSelector } from "./hook/useAppSelector";
 import { useAppDispatch } from "./hook/useAppDispatch";
 import { setTheme } from "./store/theme/themeRedux";
+import TemperatureRange from "./components/organisms/Range/TemperatureRange/TemperatureRange";
+import { FanModeTypeShape } from "./types/capabilities/FanMode";
+import DownloadIcon from "./assets/icons/SVG/DownloadIcon";
+import DometicIcon from "./assets/icons/SVG/DometicIcon";
+import AirPurificationIcon from "./assets/icons/SVG/AirPurificationIcon";
+import BluetoothIcon from "./assets/icons/SVG/BluetoothIcon";
+import { CheckBox } from "./components/atoms/CheckBox/checkBox";
 interface FormState {
   email: string;
   password: string;
@@ -26,13 +33,21 @@ const initialFormState: Readonly<FormState> = {
   password: "",
 };
 
+const tempValuesArray = [
+  15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
+];
 
 function App() {
   const [switchState, setSwitchState] = useState(false);
   const [textInput, setTextInput] = useState("");
+  const [activeTemp, setActiveTemp] = useState(true);
+  const [currentTemp, setCurrentTemp] = useState(15);
+  const [targetTemp, setTargetTemp] = useState(24);
+  const [checkBoxValue, setCheckBoxValue] = useState(false)
+  const [fanMode, setFanMode] = useState<FanModeTypeShape>(0);
 
   const dispatch = useAppDispatch();
-  const theme = useAppSelector(state => state.theme.theme)
+  const theme = useAppSelector((state) => state.theme.theme);
 
   const { control, formState, getValues, handleSubmit } = useForm<FormState>({
     defaultValues: initialFormState,
@@ -56,14 +71,14 @@ function App() {
 
   const handleThemeChange = (event) => {
     console.log(event.target.value);
-    dispatch(setTheme(event.target.value))
-  }
+    dispatch(setTheme(event.target.value));
+  };
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={IconDometic} className="App-logo" alt="logo" />
-        <Spacer size={20}/>
+        <Spacer size={20} />
         <select defaultValue={theme} onChange={handleThemeChange}>
           <option value="dark">dark</option>
 
@@ -73,7 +88,10 @@ function App() {
         </select>
       </header>
       <div className="container">
-        <div className="content" style={{backgroundColor:colors[theme].LAYOUT_BACKGROUND}}>
+        <div
+          className="content"
+          style={{ backgroundColor: colors[theme].LAYOUT_BACKGROUND }}
+        >
           <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
             Switch
           </LocalText>
@@ -89,6 +107,14 @@ function App() {
                 size="BodyM"
               >{` ${switchState}`}</LocalText>
             </div>
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Check Box
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component">
+            <CheckBox  onPress={() => setCheckBoxValue(!checkBoxValue)} value={checkBoxValue} elementId='checkBox'/>
           </div>
           <Spacer size={30} />
           <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
@@ -122,6 +148,7 @@ function App() {
           <Spacer size={10} />
           <div>
             <ControlledTextInput
+              containerStyle={{ alignItems: "flex-start" }}
               onEndEditing={() => console.log(getValues("email"))}
               control={control}
               rules={rules.email}
@@ -140,6 +167,7 @@ function App() {
               }
             />
             <ControlledTextInput
+              containerStyle={{ alignItems: "flex-start" }}
               onEndEditing={() => console.log(getValues("password"))}
               control={control}
               name="password"
@@ -182,6 +210,89 @@ function App() {
             <LocalText color="ACCENT_PRIMARY_REGULAR" size="BodyS">
               ---SPACE---
             </LocalText>
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            SVG Icons
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component">
+            <DownloadIcon
+              fillColor="ACCENT_PRIMARY_REGULAR"
+              width={40}
+              height={40}
+            />
+            <DometicIcon
+              fillColor="ACCENT_PRIMARY_REGULAR"
+              width={40}
+              height={40}
+            />
+            <AirPurificationIcon
+              fillColor="ACCENT_PRIMARY_REGULAR"
+              width={40}
+              height={40}
+            />
+            <BluetoothIcon
+              fillColor="ACCENT_PRIMARY_REGULAR"
+              width={40}
+              height={40}
+            />
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Temperature Range
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component-column">
+            <div className="component">
+              <LocalText color="ACCENT_PRIMARY_REGULAR" size="BodyS">
+                Inside Temperature:
+              </LocalText>
+              <select
+                defaultValue={currentTemp}
+                onChange={(e) => setCurrentTemp(parseInt(e.target.value))}
+              >
+                {tempValuesArray.map((value) => {
+                  return <option value={value}>{value}</option>;
+                })}
+              </select>
+            </div>
+            <Spacer size={5} />
+            <div className="component">
+              <LocalText color="ACCENT_PRIMARY_REGULAR" size="BodyS">
+                Selected Temperature:
+              </LocalText>
+              <select
+                defaultValue={targetTemp}
+                onChange={(e) => setTargetTemp(parseInt(e.target.value))}
+              >
+                {tempValuesArray.map((value) => {
+                  return <option value={value}>{value}</option>;
+                })}
+              </select>
+            </div>
+            <Spacer size={5} />
+            <div className="component">
+              <LocalText color="ACCENT_PRIMARY_REGULAR" size="BodyS">
+                Active
+              </LocalText>
+              <LocalSwitch
+                value={activeTemp}
+                onPress={() => setActiveTemp(!activeTemp)}
+              />
+            </div>
+            <Spacer size={10} />
+            <TemperatureRange
+              maxTemperature={tempValuesArray[tempValuesArray.length - 1]}
+              minTemperature={tempValuesArray[0]}
+              active={activeTemp}
+              fanMode={fanMode}
+              currentTemperature={currentTemp}
+              targetTemperature={targetTemp}
+              onPress={() => {
+                console.log("TEMP WIDGET PRESSED");
+              }}
+            />
           </div>
         </div>
       </div>
