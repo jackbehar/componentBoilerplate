@@ -38,5 +38,7 @@ let persistor = persistStore(store);
 
 type RootState = ReturnType<typeof rootReducer>;
 
+export type AppDispatch = typeof store.dispatch;
+
 //@ts-ignore
 export { store, persistor, type RootState };

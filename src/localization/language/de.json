@@ -4,7 +4,8 @@
       "success": "Success",
       "failure": "Failed",
       "failedToUpdate": "Failed to update. something went wrong please try again.",
-      "somethingWentWrong": "Something went wrong. Please try again."
+      "somethingWentWrong": "Something went wrong. Please try again.",
+      "guest": "Guest"
     },
     "rules": {
       "passwordConditions": "The password do not satisify the conditions",
@@ -28,7 +29,7 @@
       "verify": "Passwort bestätigen",
       "signUp": "Erstellen",
       "haveAccount": "Haben Sie bereits einen Account? ",
-      "passwordValid": "Mindestens 8 Zeichen, mindestens einen Kleinbuchstaben, einen Großbuchstaben und ein Sonderzeichen. Erlaubte\n Sonderzeichen sind: #, $, -, !, @, %, &, /, (, ), ?, +, * \nBeispiel: Tomyroy@",
+      "passwordValid": "Password minimum length 8 characters, at least 1 lower case, 1 upper case and 1 special character. Not more than 2 repeated characters in a row. Allowed special characters are #, $, -, !, @, %, &, /, (, ), ?, +, * \nExample: Tomyroy@",
       "awesome": "Almost there!",
       "userAccount": "Eine Verifikations-email wurde an Sie gesendet.",
       "emailReceived": "I got the email and verified.",
@@ -38,7 +39,7 @@
       "less": "weniger",
       "dometicMarketingText": "Ich stimme zu",
       "moreData": "Ich möchte exklusive Angebote und aktuelle Informationen über Dometic erhalten. Über e-mail, Telefon, SMS, Push-Notification, Popups in der App und anderen elektronischen Möglichkeiten. Ihre persönlichen Informationen werden sicher von uns verwahrt und nicht für Marketing-Zwecke an Dritte weitergegeben.",
-      "showOffers": "Ja, Ich möchte über Angebote und Dienstleistungen informiert werden.",
+      "showOffers": "Ja, Ich möchte über Angebote und Dienstleistungen informiert werden."
     },
     "gateway": {
       "gateWay": "gateway",
@@ -60,7 +61,8 @@
       "email": "E-mail",
       "password": "Passwort",
       "forgotPwd": "Haben Sie ihr Passwort vergessen? ",
-      "signUp": "Registrieren"
+      "signUp": "Sign up",
+      "login": "Login"
     },
     "resetPwd": {
       "resetPwd": "Passwort zurücksetzen?",
@@ -85,8 +87,9 @@
       "searchText": "Suche nach nahen Produkten..",
       "cloudConnect": "Verbinde mit der Cloud..",
       "header": "Dometic Produkt auswählen",
-      "deviceFound": "Device found",
-      "selectDeviceText": "Please select the device to onboard.",
+      "deviceFound": "Device found!",
+      "list": "list",
+      "selectDeviceText": "Please select a device from the list",
       "qrCode": "QR Code",
       "noDevice": "Kein Gerät gefunden",
       "bleWifi": "Bitte stellen Sie sicher das Sie Bluetooth aktiviert haben",
@@ -120,28 +123,71 @@
   "landing": {
     "common": {
       "ok": "OK",
+      "manage": "Verwalten",
+      "save": "Speichern",
+      "updateFailed": "Update fehlgeschlagen",
       "somethingWentWrongTryAgain": "Etwas ist schief gelaufen, bitte versuchen Sie es später erneut",
-      "updating": "Aktualisierung"
+      "updating": "Aktualisierung",
+      "connectionRequired": {
+        "title": "Kein Internet",
+        "text": "Internetverbindung ist erforderlich"
+      }
+    },
+    "rules": {
+      "nameRequired": "Name ist erforderlich",
+      "firstNameRequired": "Vorname ist erforderlich",
+      "lastNameRequired": "Nachname ist erforderlich",
+      "deviceNameSpecialCharacters": "Der Gerätename darf keine Sonderzeichen enthalten"
     },
     "dashboard": {
       "title": "Dashboard"
     },
+    "sidemenu": {
+      "userinfo": {
+        "adventurer": "Adventurer",
+        "guest": "Guest",
+        "guestlogin": "Login/Sign-up",
+        "manage": "Manage"
+      },
+      "devices": {
+        "title": "Devices"
+      },
+      "automation": {
+        "title": "Automation"
+      },
+      "appsettings": {
+        "title": "App settings"
+      }
+    },
     "deviceManagement": {
-      "title": "DEVICE MANAGEMENT",
-      "addNewButtonText": "Add new",
-      "deviceName": "Device name",
+      "manage": "Manage",
+      "addDeviceText": "Please add your device to start your experience",
       "hullIDNumber": "MAC Address",
       "manufacturer": "Manufacturer",
       "productInformation": "Product Information",
-      "editDevice": "Edit device"
+      "editDevice": "Edit device",
+      "title": "DEVICE MANAGEMENT",
+      "addNewButtonText": "Add new device",
+      "deviceName": "Gerätename",
+      "deviceInformation": "Geräteinformation",
+      "advanced": "Advanced",
+      "remove": "Remove",
+      "configureWIfi": "WLAN konfigurieren",
+      "temperatureSettings": "Temperatureinstellungen",
+      "edit": "Edit",
+      "checkUpdatesInfo": "You have to log in to update device.",
+      "dismiss": "Dismiss"
     },
     "onBoarding": {
-      "searchText": "Looking for nearby Bluetooth devices.\nPlease wait.",
+      "searchTitle": "Searching nearby devices",
+      "searchText": "Make sure your Device is in Pairing Mode",
       "cloudConnect": "Connecting to cloud...",
-      "deviceFound": "Device found",
-      "selectDeviceText": "Please select the device to onboard.",
-      "noDevice": "No device found",
+      "deviceFound": "Device found!",
+      "list": "list",
+      "selectDeviceText": "Please select a device from the list",
+      "noDevice": "No product found",
       "bleMsg": "Please activate Bluetooth pairing on your device.",
+      "pairingText": "Please wait...",
       "nameTitle": "NAME",
       "searchAgain": "Search again",
       "linkTitle": "LINK",
@@ -153,8 +199,8 @@
       "onBoardingScreenTitle": "ONBOARDING",
       "connectingDevice": "Connecting to device.\nPlease wait",
       "success": {
-        "text": "Onboarding Successful!",
-        "hint": "Close this window to start exploring your app.",
+        "text": "Success!!",
+        "hint": "Your device is ready to be used.",
         "done": "Done"
       },
       "successAlready": {
@@ -163,11 +209,18 @@
         "done": "Done"
       },
       "failed": {
-        "text": "Onboarding Failed!",
-        "hint": "It was not possible to configure your device. Please try again.",
+        "text": "Pairing failed",
+        "hint": "Something went wrong. Please try again.",
         "tryAgain": "Try again"
       },
-      "loadingText": "Loading, please wait.",
+      "deviceListTitle": "Device list",
+      "searchingTitle": "Searching",
+      "pairingTitle": "Pairing",
+      "syncingTitle": "Syncing",
+      "congratulationsTitle": "Congratulations",
+      "warningTitle": "Warning",
+      "loadingText": "Please wait...",
+      "syncInProgress": "Sync in progress",
       "connectionRequired": {
         "title": "Internet connection required",
         "text": "Might be already onboarded, please turn on internet connection"
@@ -238,6 +291,8 @@
       "spanish": "Spanish (US)",
       "notification": "Benachrichtigungen",
       "temperature": "Temperatur",
+      "temperatureUnit": "Temperature unit",
+      "termsAndConditions": "Terms & Conditions",
       "climate": "Klima",
       "power": "Energie",
       "tank": "Panzer",
@@ -466,7 +521,9 @@
       "schedule_bottomBar": "Timer",
       "battery_bottomBar": "Battery",
       "modes_bottomBar": "Modes",
-      "settings_bottomBar": "Settings"
+      "settings_bottomBar": "Settings",
+      "configureDevice": "Configure Device",
+      "deviceInformation": "Device Information"
     },
     "mechanical": {
       "lidControl": "Lid Control",
@@ -754,7 +811,7 @@
       "editPreset": "Edit preset"
     },
     "emptyView": {
-      "title": "Welcome to the dometic one",
+      "title": "Welcome to Dometic",
       "description": "Please add your device to start your experience",
       "buttonText": "Add new device"
     }
@@ -895,7 +952,9 @@
     "settings": "SETTINGS",
     "subscriptions": "Subscriptions",
     "success": "Success",
-    "view/EditAccount": "View/Edit Account"
+    "view/EditAccount": "View/Edit Account",
+    "authentication": "Authentication",
+    "logout": "Logout"
   },
   "guestPin": {
     "save": "Save",
@@ -969,9 +1028,8 @@
       "headerTitle": "MANAGE SUB GROUPS"
     }
   },
-  "editDevice": {
-    "headerTitle": "EDIT DEVICE",
-    "headerTitle_SDB": "EDIT"
+  "deviceInformation": {
+    "headerTitle": "Device information"
   },
   "ota": {
     "alertErrorTitle": "Something went wrong!",
@@ -992,10 +1050,10 @@
     "updateOkText": "The firmware has been updated succesfully.",
     "transferOkTitle": "Transfer successful",
     "transferOkText": "The device is installing the update and restarting.",
-    "updatedTitle":"All good!",
-    "updatedText":"You have the latest update.",
-    "checkingTitle":"Searching for updates",
-    "checkingText":"Please wait...",
+    "updatedTitle": "All good!",
+    "updatedText": "You have the latest update.",
+    "checkingTitle": "Searching for updates",
+    "checkingText": "Please wait...",
     "details": "Details",
     "status": {
       "download": "Download",
@@ -1010,8 +1068,8 @@
     "checkUpdates": {
       "title": "CHECK UPDATES",
       "checkUpdates": "Check Updates",
-      "notConnectedAlertTitle":"Device not connected",
-      "notConnectedAlertText":"You need to be connected to the device over Bluetooth to perform a firmware update"
+      "notConnectedAlertTitle": "Device not connected",
+      "notConnectedAlertText": "You need to be connected to the device over Bluetooth to perform a firmware update"
     }
   },
   "tiles": {
@@ -1082,11 +1140,7 @@
     "capabilities": {
       "power": {
         "title": "Power",
-        "modalTitle": "Are you sure you want to turn {{state}} the System?",
-        "options": {
-          "off": "OFF",
-          "on": "ON"
-        }
+        "modalTitle": "Are you sure you want to turn {{state}} the System?"
       },
       "airFlow": {
         "title": "Status",
@@ -1108,12 +1162,6 @@
       },
       "sleep": {
         "title": "Sleep"
-      },
-      "autoOn": {
-        "title": "Auto ON (Awake)"
-      },
-      "autoOff": {
-        "title": "Auto OFF (Sleep)"
       },
       "internalLights": {
         "title": "Internal Lights"
@@ -1161,7 +1209,6 @@
       "targetWithUnit": "Target temperature | {{unit}}"
     },
     "airQuality": "Air Quality",
-    "target": "Target",
     "climate": "Climate",
     "waterHeater": {
       "on": "ON",
@@ -1219,21 +1266,6 @@
         "temperature": "Track Temperature",
         "airQuality": "Track Air Quality"
       }
-    },
-    "scheduleScreen": {
-      "switchTitle": "Scheduler",
-      "autoOn": "Auto ON (Awake)",
-      "autoOff": "Auto OFF (Sleep)",
-      "everyDay": "Everyday",
-      "autoTemperature": "Temperature",
-      "status": "Status",
-      "time": "Time",
-      "repeat": "Repeat",
-      "editAutoOn": "Edit Auto ON",
-      "editAutoOff": "Edit Auto OFF",
-      "weekDays": "Weekdays",
-      "updateSuccesfull": "Schedule has been updated succesfully",
-      "selectADay": "Select one or more days from the list of weekdays"
     },
     "cardScheduler": {
       "edit": "Edit",
@@ -1303,5 +1335,47 @@
     "add": "Add",
     "edit": "Edit",
     "minibarInformation": "Minibar Information"
+  },
+  "automation": {
+    "title": "Automation"
+  },
+  "capabilities": {
+    "temperature": {
+      "target": "Target"
+    },
+    "airQuality": {
+      "title": "Air Quality"
+    },
+    "solar": {
+      "solarOn": "Solar ON"
+    },
+    "power": {
+      "title": "Power",
+      "airConditioner": "Are you sure you want to power {{state}} Air conditioner?",
+      "airQuality": "Are you sure you want to power {{state}} Air quality?",
+      "options": {
+        "off": "OFF",
+        "on": "ON"
+      }
+    },
+    "automation": {
+      "autoOn": {
+        "title": "Auto ON"
+      },
+      "autoOff": {
+        "title": "Auto OFF"
+      },
+      "sheetTitle": "Time"
+    },
+    "sleep": {
+      "button": "Dismiss",
+      "text": "Sleeping function is only available in Cooling and Heating modes."
+    }
+  },
+  "outOfReach": {
+    "title": "Out of Reach",
+    "button": "Dismiss",
+    "shape": "It seems that Air conditioner is out of reach.\n\nMake sure you are near your device and Bluetooth is enabled.",
+    "inventilate": "It seems that Inventilate is out of reach.\n\nMake sure you are near your device and Bluetooth is enabled."
   }
 }

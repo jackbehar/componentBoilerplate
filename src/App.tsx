@@ -1,77 +1,192 @@
 import React, { useState, useEffect } from "react";
+import { StyleSheet } from "react-native";
+import { useForm } from "react-hook-form";
 import "./App.css";
 import { IconDometic } from "./constants/imageConstants";
+import { rules } from "./core/validation/localValidation";
+import colors from './assets/colors/tokens/colors';
+import translations from "./localization/config/translationHelper";
 import LocalSwitch from "./components/atoms/LocalSwitch/LocalSwitch";
-import { StyleSheet } from "react-native";
 import LocalText from "./components/atoms/LocalText/LocalText";
 import LocalButton from "./components/atoms/Buttons/LocalButton/LocalButton";
 import Spacer from "./components/atoms/Spacer/Spacer";
+import LocalTextInput from "./components/atoms/LocalTextInput/LocalTextInput";
+import ControlledTextInput from "./components/atoms/LocalTextInput/ControlledTextInput";
+import i18n from "./localization/config/i18n";
+import { useAppSelector } from "./hook/useAppSelector";
+import { useAppDispatch } from "./hook/useAppDispatch";
+import { setTheme } from "./store/theme/themeRedux";
+interface FormState {
+  email: string;
+  password: string;
+}
+
+const initialFormState: Readonly<FormState> = {
+  email: "",
+  password: "",
+};
+
 
 function App() {
   const [switchState, setSwitchState] = useState(false);
+  const [textInput, setTextInput] = useState("");
+
+  const dispatch = useAppDispatch();
+  const theme = useAppSelector(state => state.theme.theme)
+
+  const { control, formState, getValues, handleSubmit } = useForm<FormState>({
+    defaultValues: initialFormState,
+    mode: "onChange",
+  });
 
   useEffect(() => {
     console.log("THIS IS THE SWITCH STATE: ", switchState);
   }, [switchState]);
 
+  const onSubmit = React.useMemo(
+    () =>
+      handleSubmit((data) => {
+        console.log({
+          email: data.email.trim().toLowerCase(),
+          password: data.password,
+        });
+      }),
+    [handleSubmit]
+  );
+
+  const handleThemeChange = (event) => {
+    console.log(event.target.value);
+    dispatch(setTheme(event.target.value))
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={IconDometic} className="App-logo" alt="logo" />
+        <Spacer size={20}/>
+        <select defaultValue={theme} onChange={handleThemeChange}>
+          <option value="dark">dark</option>
+
+          <option value="light">light</option>
+
+          <option value="legacy">legacy</option>
+        </select>
       </header>
       <div className="container">
-        <div className="content">
-          <h3>Switch</h3>
+        <div className="content" style={{backgroundColor:colors[theme].LAYOUT_BACKGROUND}}>
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Switch
+          </LocalText>
+          <Spacer size={10} />
           <div className="component">
             <LocalSwitch
               value={switchState}
               onPress={() => setSwitchState(!switchState)}
             />
             <div className="textLine">
-              <h4>status:</h4>
-              <p>{` ${switchState}`}</p>
+              <LocalText
+                color="ACCENT_PRIMARY_REGULAR"
+                size="BodyM"
+              >{` ${switchState}`}</LocalText>
             </div>
           </div>
-          <h3>Text</h3>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Text
+          </LocalText>
+          <Spacer size={10} />
           <div className="component">
-            <LocalText color="ACCENT_PRIMARY_REGULAR" size="SubheadingL">
+            <LocalText color="ACCENT_PRIMARY_REGULAR" size="BodyM">
               {"TEST TEXT"}
             </LocalText>
           </div>
-          <h3>Button</h3>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Text Input
+          </LocalText>
+          <Spacer size={10} />
+          <div>
+            <LocalTextInput
+              onChangeText={setTextInput}
+              onEndEditing={() => console.log(textInput)}
+              value={textInput}
+              label="Example text input"
+              color="ACCENT_PRIMARY_REGULAR"
+              containerStyle={{ alignItems: "flex-start" }}
+            />
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Controlled Text Input
+          </LocalText>
+          <Spacer size={10} />
+          <div>
+            <ControlledTextInput
+              onEndEditing={() => console.log(getValues("email"))}
+              control={control}
+              rules={rules.email}
+              error={formState.errors.email?.message}
+              name="email"
+              color="TEXT_REGULAR"
+              label={i18n.t(translations.login.login.email)}
+              keyboardType="email-address"
+              autoComplete="off"
+              autoCapitalize="none"
+              autoCorrect={false}
+              isValid={
+                formState.touchedFields.email &&
+                !formState.errors.email &&
+                !!getValues("email")
+              }
+            />
+            <ControlledTextInput
+              onEndEditing={() => console.log(getValues("password"))}
+              control={control}
+              name="password"
+              color="TEXT_REGULAR"
+              label={i18n.t(translations.login.login.password)}
+              error={formState.errors.password?.message}
+              rules={rules.password}
+              secureTextEntry
+              autoComplete="off"
+              autoCapitalize="none"
+              autoCorrect={false}
+            />
+            <Spacer size={30} />
+            <LocalButton
+              text={i18n.t(translations.login.login.logIn)}
+              onPress={onSubmit}
+            />
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Button
+          </LocalText>
+          <Spacer size={10} />
           <div className="component">
             <LocalButton
               text="TEST ME"
               onPress={() => console.log("BUTTON PRESSED!!")}
             />
           </div>
-          <h3>Spacer</h3>
-          <div className="component">
-            <p>SPACE---</p>
-            <Spacer size={50} />
-            <p>---SPACE</p>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Spacer
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component-column">
+            <LocalText color="ACCENT_PRIMARY_REGULAR" size="BodyS">
+              --SPACE---
+            </LocalText>
+            <Spacer size={60} />
+            <LocalText color="ACCENT_PRIMARY_REGULAR" size="BodyS">
+              ---SPACE---
+            </LocalText>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    paddingHorizontal: 10,
-  },
-  button: {
-    alignItems: "center",
-    backgroundColor: "lightblue",
-    padding: 10,
-  },
-  countContainer: {
-    alignItems: "center",
-    padding: 10,
-  },
-});
 
 export default App;
