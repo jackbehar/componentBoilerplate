@@ -1,0 +1,3 @@
+const DEFAULT_SPACER_SIZE = 1;
+
+export {DEFAULT_SPACER_SIZE};
