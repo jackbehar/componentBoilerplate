@@ -26,6 +26,9 @@ import { CheckBox } from "./components/atoms/CheckBox/checkBox";
 import ViewItemHeader from "./components/molecules/ViewitemHeader/ViewItemHeader";
 import ViewItemSubtitle from "./components/molecules/ViewItemSubtitle/ViewItemSubtitle";
 import ColdBigIcon from "./assets/icons/SVG/ColdBigIcon";
+import CardProfileS from "./components/molecules/CardProfileS";
+import ViewMenuItem from "./components/molecules/Navigation/drawer/ViewMenuItem";
+import BottomModalPicker from "./components/molecules/Pickers/BottomModalPicker/BottomModalPicker";
 interface FormState {
   email: string;
   password: string;
@@ -47,6 +50,7 @@ function App() {
   const [currentTemp, setCurrentTemp] = useState(15);
   const [targetTemp, setTargetTemp] = useState(24);
   const [checkBoxValue, setCheckBoxValue] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [fanMode, setFanMode] = useState<FanModeTypeShape>(0);
 
   const dispatch = useAppDispatch();
@@ -71,6 +75,8 @@ function App() {
       }),
     [handleSubmit]
   );
+
+  const refBottomSheet = React.useRef();
 
   const handleThemeChange = (event) => {
     console.log(event.target.value);
@@ -250,7 +256,7 @@ function App() {
             Temperature Range
           </LocalText>
           <Spacer size={10} />
-          <div className="component-column" style={{alignItems: "center"}}>
+          <div className="component-column" style={{ alignItems: "center" }}>
             <div className="component">
               <LocalText color="ACCENT_PRIMARY_REGULAR" size="BodyS">
                 Inside Temperature:
@@ -324,6 +330,46 @@ function App() {
             />
           </div>
           <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Card Profile S
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component-column">
+            <CardProfileS
+              isLoggedIn={isLoggedIn}
+              firstName={"John"}
+              lastName={"Doe"}
+              email={"john.doe@mail.com"}
+              viewOrEditBtnClicked={() => {
+                isLoggedIn
+                  ? console.log("WILL NAVIGATE TO EDIT PROFILE SCREEN")
+                  : console.log(`WILL NAVIGATE TO LOG IN`);
+                setIsLoggedIn(!isLoggedIn);
+              }}
+            />
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            View Menu Item
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component-column">
+            <ViewMenuItem
+              label={'Menu item'}
+              route={'/devices-stack'}
+              navigation={null}
+            />
+          </div>
+          <Spacer size={30} />
+          {/* ------NOT WORKING------ */}
+          {/* <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Bottom Modal Picker
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component-column">
+            <BottomModalPicker ref={refBottomSheet}/>
+          </div>
+          <Spacer size={30} /> */}
         </div>
       </div>
     </div>

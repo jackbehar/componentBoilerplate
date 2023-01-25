@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         test: /\.(js|jsx|ts|tsx)$/,
-        exclude: /node_modules\/(?!react-native-reanimated)/,
+        exclude: [/node_modules\/(?!react-native-reanimated)/],
         use: {
           loader: "babel-loader",
           options: {
@@ -42,6 +42,7 @@ module.exports = {
               "@babel/preset-react",
               "@babel/preset-typescript",
               "@babel/preset-env",
+              "module:metro-react-native-babel-preset",
               {
                 plugins: [
                   "react-native-reanimated/plugin",
