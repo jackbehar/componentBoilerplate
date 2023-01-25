@@ -23,6 +23,9 @@ import DometicIcon from "./assets/icons/SVG/DometicIcon";
 import AirPurificationIcon from "./assets/icons/SVG/AirPurificationIcon";
 import BluetoothIcon from "./assets/icons/SVG/BluetoothIcon";
 import { CheckBox } from "./components/atoms/CheckBox/checkBox";
+import ViewItemHeader from "./components/molecules/ViewitemHeader/ViewItemHeader";
+import ViewItemSubtitle from "./components/molecules/ViewItemSubtitle/ViewItemSubtitle";
+import ColdBigIcon from "./assets/icons/SVG/ColdBigIcon";
 interface FormState {
   email: string;
   password: string;
@@ -43,7 +46,7 @@ function App() {
   const [activeTemp, setActiveTemp] = useState(true);
   const [currentTemp, setCurrentTemp] = useState(15);
   const [targetTemp, setTargetTemp] = useState(24);
-  const [checkBoxValue, setCheckBoxValue] = useState(false)
+  const [checkBoxValue, setCheckBoxValue] = useState(false);
   const [fanMode, setFanMode] = useState<FanModeTypeShape>(0);
 
   const dispatch = useAppDispatch();
@@ -93,7 +96,7 @@ function App() {
           style={{ backgroundColor: colors[theme].LAYOUT_BACKGROUND }}
         >
           <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
-            Switch
+            Local Switch
           </LocalText>
           <Spacer size={10} />
           <div className="component">
@@ -114,11 +117,15 @@ function App() {
           </LocalText>
           <Spacer size={10} />
           <div className="component">
-            <CheckBox  onPress={() => setCheckBoxValue(!checkBoxValue)} value={checkBoxValue} elementId='checkBox'/>
+            <CheckBox
+              onPress={() => setCheckBoxValue(!checkBoxValue)}
+              value={checkBoxValue}
+              elementId="checkBox"
+            />
           </div>
           <Spacer size={30} />
           <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
-            Text
+            Local Text
           </LocalText>
           <Spacer size={10} />
           <div className="component">
@@ -128,7 +135,7 @@ function App() {
           </div>
           <Spacer size={30} />
           <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
-            Text Input
+            Local Text Input
           </LocalText>
           <Spacer size={10} />
           <div>
@@ -188,7 +195,7 @@ function App() {
           </div>
           <Spacer size={30} />
           <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
-            Button
+            Local Button
           </LocalText>
           <Spacer size={10} />
           <div className="component">
@@ -243,7 +250,7 @@ function App() {
             Temperature Range
           </LocalText>
           <Spacer size={10} />
-          <div className="component-column">
+          <div className="component-column" style={{alignItems: "center"}}>
             <div className="component">
               <LocalText color="ACCENT_PRIMARY_REGULAR" size="BodyS">
                 Inside Temperature:
@@ -294,6 +301,29 @@ function App() {
               }}
             />
           </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            View Item Header
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component-column">
+            <ViewItemHeader title={"Example Item"} />
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            View Item Subtitle
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component-column">
+            <ViewItemSubtitle
+              displayValue={i18n.t(translations.landing.common.manage)}
+              name={"Item Name"}
+              subtitle={"Subtitle"}
+              onPress={() => console.log(`viewItemSubtitle PRESSED!!`)}
+              Icon={ColdBigIcon}
+            />
+          </div>
+          <Spacer size={30} />
         </div>
       </div>
     </div>
