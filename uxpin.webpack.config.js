@@ -71,9 +71,10 @@ module.exports = {
       __DEV__: process.env.NODE_ENV !== 'production' || true,
     }),
     
-      new webpack.ProvidePlugin({
-         "React": "react",
-      }),
+    new webpack.ProvidePlugin([{
+      "React": "react",
+      "react-native-web": { commonjs: true }
+   }]),
    
   ],
   stats: {
