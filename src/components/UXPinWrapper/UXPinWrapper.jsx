@@ -3,10 +3,12 @@ import { Provider } from 'react-redux';
 import { store } from '../../store/config/store-config';
 
 export default function UXPinWrapper({ children }) {
-  
+
   return (
-    <Provider store={store}>
+    <Provider store={store} >
+      <div style={{ display: 'inline-flex' }}>
         {children}
+      </div>
     </Provider>
   );
 }
