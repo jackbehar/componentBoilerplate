@@ -17,14 +17,14 @@ function checkBoxWrapped(props: CheckBoxProps) {
   }, [props.value]); // Only re-run the effect if value prop changes
 
     return (
-      // <div key={(Date.now).toString()}>
+      <div >
         <CheckBoxMerge 
         {...props}
         onPress={() => setCheckBoxValue(!checkBoxValue)}
         value={checkBoxValue}
         elementId="checkBox"
         />
-        // </div>
+    </div>
     )
 } 
 

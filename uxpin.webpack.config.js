@@ -9,28 +9,35 @@ module.exports = {
   entry: ["babel-polyfill", "./src/index.tsx"],
   output: {
     path: __dirname + "/dist/",
+    publicPath: ''
   },
   module: {
     rules: [
-      // {
-      //   test: /\.(ts|tsx)$/,
-      //   exclude: /node_modules\/(?!react-native-reanimated)/,
-      //   use: "ts-loader",
-      // },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/inline",
+    },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-      {
-        test: /\.svg$/,
         use: [
-          {
-            loader: "svg-url-loader",
-            options: {
-              limit: 10000,
-            },
-          },
-        ],
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      // {
+      //   test: /\.svg$/,
+      //   use: [
+      //     {
+      //       loader: "svg-url-loader",
+      //       options: {
+      //         encoding: "base64",
+      //       },
+      //     },
+      //   ],
+      // },
+      {
+        test: /\.svg/,
+        type: 'asset/inline'
       },
       {
         test: /\.(js|jsx|ts|tsx)$/,
