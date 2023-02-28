@@ -20,6 +20,7 @@ module.exports = {
           'src/components/molecules/CardProfileS/index.tsx',
           'src/components/molecules/Parameter/RangeInfo/RangeInfo.tsx',
           'src/components/molecules/ViewItemSubtitle/ViewItemSubtitle.tsx',
+          'src/components/molecules/ViewItemHeader/ViewItemHeader.tsx',
         ],
       },
       {
