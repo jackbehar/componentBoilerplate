@@ -10,7 +10,9 @@ export default (
     active={true}
     fanMode={0}
     currentTemperature={23}
+    ddmCurrentTemperature={"ddmCurrent"}
     targetTemperature={24}
+    ddmTargetTemperature={"ddmTarget"}
     onPress={() => {
       console.log("TEMP WIDGET PRESSED");
     }}
