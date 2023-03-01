@@ -1,12 +1,14 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import {useAppSelector} from '../../../../hook/useAppSelector';
 import translations from '../../../../localization/config/translationHelper';
 import {getBigRangeConsts} from '../RangeConsts';
 import RangeInfo from '../../../molecules/Parameter/RangeInfo/RangeInfo';
 import {TemperatureInfoState} from '../../../../types/capabilities/TemperatureInfo';
-import {TEMPERATURE_UNITS} from '../../../../shared/utility/temperature';
+import {
+  TemperatureUnit,
+  TEMPERATURE_UNITS,
+} from '../../../../shared/utility/temperature';
 import TemperatureSlider, {
   TemperatureSliderProps,
 } from '../TemperatureSlider/TemperatureSlider';
@@ -21,9 +23,7 @@ function TemperatureRange({
   active,
   minTemperature,
   currentTemperature,
-  ddmCurrentTemperature,
   targetTemperature,
-  ddmTargetTemperature,
   maxTemperature,
   infoState = TemperatureInfoState.NoInput,
   onPress,
@@ -32,14 +32,19 @@ function TemperatureRange({
 }: Props) {
   const RangeConsts = React.useMemo(() => getBigRangeConsts(), []);
   const {t} = useTranslation();
-  const unit = useAppSelector(state => state.setting.unit);
-  const temperatureUnit = React.useMemo(() => TEMPERATURE_UNITS[unit], [unit]);
+  const temperatureUnit = React.useMemo(
+    () => TEMPERATURE_UNITS[TemperatureUnit.CELSIUS],
+    [],
+  );
 
   return (
     <TouchableOpacity
       disabled={disabled || !active}
       onPress={onPress}
-      style={{height: RangeConsts.HEIGHT, width: RangeConsts.WIDTH}}>
+      style={{
+        height: RangeConsts.HEIGHT,
+        width: RangeConsts.WIDTH,
+      }}>
       <TemperatureSlider
         active={active && fanMode !== FanModeTypeShape.Ventilation}
         currentTemperature={currentTemperature}

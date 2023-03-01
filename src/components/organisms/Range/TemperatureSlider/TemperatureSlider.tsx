@@ -17,10 +17,7 @@ export interface TemperatureSliderProps {
   minTemperature: number;
   maxTemperature: number;
   currentTemperature: number | undefined;
-
-  ddmCurrentTemperature: string;
   targetTemperature: number | undefined;
-  ddmTargetTemperature: string;
   active: boolean;
   RangeConsts: ReturnType<typeof getBigRangeConsts>;
   disabled?: boolean;
@@ -29,9 +26,7 @@ export interface TemperatureSliderProps {
 function TemperatureSlider({
   active,
   currentTemperature,
-  ddmCurrentTemperature,
   maxTemperature,
-  ddmTargetTemperature,
   minTemperature,
   targetTemperature,
   infoState,
