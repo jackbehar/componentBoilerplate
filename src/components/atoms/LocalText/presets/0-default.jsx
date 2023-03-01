@@ -4,7 +4,8 @@ export default (
   <LocalText
     uxpId="local-text-1"
     color="TEXT_DARK"
-    size="DisplayS">
+    size="DisplayS"
+    style={{}}>
     Local Text Component
   </LocalText>
 );

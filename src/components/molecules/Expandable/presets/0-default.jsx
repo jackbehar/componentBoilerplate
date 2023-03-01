@@ -7,6 +7,5 @@ export default (
     forceExpand={undefined}
     label="not expanded"
     labelExpanded="expanded"
-    {...rest}
   />
 );

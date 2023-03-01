@@ -17,10 +17,12 @@ module.exports = {
           'src/components/atoms/Spacer/Spacer.tsx',
           'src/components/atoms/Layout/BaseLayout.tsx',
           'src/components/atoms/LocalTextInput/LocalTextInput.tsx',
+          'src/components/atoms/SeparatorLine/SeparatorLine.tsx',
+          //'src/components/atoms/Layout/Column.tsx',
           'src/components/molecules/CardProfileS/index.tsx',
           'src/components/molecules/Parameter/RangeInfo/RangeInfo.tsx',
           'src/components/molecules/ViewItemSubtitle/ViewItemSubtitle.tsx',
-          'src/components/molecules/ViewItemHeader/ViewItemHeader.tsx',
+          //'src/components/molecules/Expandable/index.tsx',
         ],
       },
       {

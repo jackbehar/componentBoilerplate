@@ -1,6 +1,9 @@
 import {StyleSheet} from 'react-native';
 import Colors from '../../../assets/colors/colors';
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 export default StyleSheet.create({
   container: {
     flex: 1,
