@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import { View, ViewProps } from "react-native";
 
-export interface UxPinLayoutProps {
-    style: React.CSSProperties,
-    children?: React.ReactNode;
-} 
-export default function uxPinLayout({style, children, ...rest}:UxPinLayoutProps) {
+
+export default function uxPinLayout({...rest}:ViewProps) {
+    const style = React.useMemo(() => {
+        return rest.style;
+      }, [rest.style]);
+    
   return (
-    <div style={style}>{children}</div>
+    <View style={style} {...rest}/>
   )
 }

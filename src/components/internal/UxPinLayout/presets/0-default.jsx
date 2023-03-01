@@ -1,19 +1,6 @@
 import uxPinLayout from "../index";
-import * as PropTypes from 'prop-types';
+import React from "react";
 
 export default (
-  <uxPinLayout
-    uxpId="container-1"
-    style={{width:"100%"}}
-  />
+  <uxPinLayout uxpId="uxPinLayout-1"/>
 );
-
-uxPinLayout.propTypes = {
-  /**
-   * Content of the Link
-   * @uxpinpropname label
-   * @uxpincontroltype input
-   * */
-  children: PropTypes.node,
-  
-};
