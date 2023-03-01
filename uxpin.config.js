@@ -24,7 +24,8 @@ module.exports = {
           'src/components/molecules/ViewItemSubtitle/ViewItemSubtitle.tsx',
           //'src/components/molecules/Expandable/index.tsx',
           'src/components/molecules/ViewItemHeader/ViewItemHeader.tsx',
-          'src/components/internal/UxPinLayout/index.tsx'
+          'src/components/internal/UxPinView/index.tsx',
+          'src/components/internal/UxPinIcon/index.tsx'
         ],
       },
       {
