@@ -4,7 +4,7 @@ export interface UxPinLayoutProps {
     style: React.CSSProperties,
     children?: React.ReactNode;
 } 
-export default function uxPinLayout({style, children}:UxPinLayoutProps) {
+export default function uxPinLayout({style, children, ...rest}:UxPinLayoutProps) {
   return (
     <div style={style}>{children}</div>
   )
