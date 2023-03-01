@@ -23,6 +23,8 @@ module.exports = {
           'src/components/molecules/Parameter/RangeInfo/RangeInfo.tsx',
           'src/components/molecules/ViewItemSubtitle/ViewItemSubtitle.tsx',
           //'src/components/molecules/Expandable/index.tsx',
+
+          'src/components/internal/UxPinLayout/index.tsx',
         ],
       },
       {
