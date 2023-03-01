@@ -6,10 +6,12 @@ import "../../index.css"
 export default function UXPinWrapper({ children }) {
 
   return (
+    
     <Provider store={store} >
-      <div style={{ display: 'inline-flex' }}>
+      <div style={{ display: 'grid' }}>
         {children}
       </div>
     </Provider>
+   
   );
 }
