@@ -1,14 +1,5 @@
-import {Dimensions, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 import Colors from '../../../assets/colors/colors';
-import {RFValue} from 'react-native-responsive-fontsize';
-import Constants from '../../..//constants/layoutConstants';
-import UiConstants from '../../..//constants/uiConstants';
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from 'react-native-responsive-screen';
-
-const {height} = Dimensions.get('window');
 
 export default StyleSheet.create({
   container: {
@@ -18,8 +9,8 @@ export default StyleSheet.create({
     backgroundColor: Colors.TRANSPARENT_COLOR,
     flexDirection: 'row-reverse',
     alignItems: 'center',
-    width: wp('90%'),
-    paddingTop: hp('0.5%'),
+    width: '90%',
+    paddingTop: '0.5%',
   },
   textContainer: {
     width: 130,
@@ -28,13 +19,13 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   icon: {
-    height: hp('4%'),
-    width: wp('8%'),
+    height: 24,
+    width: 24,
   },
   subtitle: {
     flex: 1,
     textAlign: 'right',
-    paddingTop: hp('0.3%'),
-    paddingRight: wp('1%'),
+    paddingTop: '0.3%',
+    paddingRight: '1%',
   },
 });

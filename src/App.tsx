@@ -34,6 +34,7 @@ import Dash from "./components/atoms/Dash/Dash";
 import DashboardTextWithIcon from "./components/atoms/LocalText/DashboardTextWithIcon";
 import LocalTextWithIcon from "./components/atoms/LocalText/LocalTextWithIcon";
 import SeparatorLine from "./components/atoms/SeparatorLine/SeparatorLine";
+import Expandable from "./components/molecules/Expandable";
 interface FormState {
   email: string;
   password: string;
@@ -420,6 +421,16 @@ function App() {
           <Spacer size={10} />
           <div className="component-column">
             <Dash />
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Expandable
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component-column">
+            <Expandable elementId='id' label='not expaded' labelExpanded="expanded" >
+              <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">EXPANDED CHILD</LocalText>
+            </Expandable>
           </div>
           <Spacer size={30} />
         </div>
