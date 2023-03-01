@@ -28,7 +28,11 @@ function TemperatureWidgetRange({
   const RangeConsts = React.useMemo(() => getSmallRangeConsts(), []);
 
   return (
-    <View style={{height: RangeConsts.HEIGHT, width: RangeConsts.WIDTH}}>
+    <View
+      style={{
+        height: RangeConsts.HEIGHT,
+        width: RangeConsts.WIDTH,
+      }}>
       <TemperatureSlider
         active={active}
         currentTemperature={currentTemperature}

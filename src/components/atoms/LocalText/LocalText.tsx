@@ -12,7 +12,7 @@ import colors, {TextColorsType} from '../../../assets/colors/tokens/colors';
 import {getFontFamily} from '../../../shared/utility/textStyle';
 import transformTestID from '../../../shared/utility/accessibilityUtility';
 
-interface Props extends LocalTextProps {
+export interface LocalTextComponentProps extends LocalTextProps {
   color: TextColorsType;
   font?: GlobalFontType;
   size?: GlobalTextStyleType;
@@ -28,14 +28,14 @@ function LocalText({
   testID,
   overrideTypography,
   ...rest
-}: Props) {
+}: LocalTextComponentProps) {
   const {t} = useTranslation();
   const theme = useAppSelector(state => state.theme.theme);
 
   const content = React.useMemo(() => {
     if (typeof children === 'string' && withTranslation) return t(children);
     return children;
-  }, [withTranslation, children]);
+  }, [withTranslation, children, t]);
 
   const colorScheme: StyleProp<StyleColorType> = React.useMemo(
     () => ({color: colors[theme][color]}),
