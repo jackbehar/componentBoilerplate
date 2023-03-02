@@ -5,7 +5,8 @@ export default (
     uxpId="dome-icon-1"
     icon="DometicIcon"
     fillColor="ACCENT_PRIMARY_REGULAR"
-    width={52}
-    height={52}
+    //width={52}
+    //height={52}
+    sizing={"100"}
   />
 );
