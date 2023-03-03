@@ -18,5 +18,7 @@ LocalText.propTypes = {
    * @uxpincontroltype input
    * */
   children: PropTypes.node,
+
+  style: PropTypes.object,
   
 };
