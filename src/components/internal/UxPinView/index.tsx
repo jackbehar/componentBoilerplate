@@ -10,4 +10,4 @@ export default function UxPinView({...rest}:ViewProps) {
   return (
     <View style={style} {...rest}/>
   )
-}
+  }
