@@ -4,5 +4,5 @@ export default (
   <LocalButton
     uxpId="local-button-1"
     text="Click Me!"
-    ddmParam="Add DDM here"/>
+    ddm="Add DDM here"/>
 );

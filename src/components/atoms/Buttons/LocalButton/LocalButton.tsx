@@ -11,7 +11,7 @@ export interface LocalButtonProps {
   onPress: () => void;
   disabled?: boolean;
   variant?: LocalButtonType;
-  ddmParam: string;
+  ddm: string;
 }
 
 function LocalButton({
@@ -19,7 +19,7 @@ function LocalButton({
   disabled,
   onPress,
   variant = LocalButtonType.PRIMARY,
-  ddmParam,
+  ddm,
 }: LocalButtonProps) {
   const animatedValue = useSharedValue(0);
 
