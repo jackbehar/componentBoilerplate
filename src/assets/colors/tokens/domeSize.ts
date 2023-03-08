@@ -6,4 +6,5 @@ const sizes = {
 
 export default sizes;
 
+
 export type DomeSize = keyof typeof sizing;
