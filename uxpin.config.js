@@ -29,6 +29,13 @@ module.exports = {
         ],
       },
       {
+        name: 'MUI Components',
+        include: [
+          'src/components/mui/Grid/Grid.js',
+          'src/components/mui/Stack/Stack.js'
+        ],
+      },
+      {
         name: 'Widgets',
         include: [
           'src/components/organisms/Range/TemperatureRange/TemperatureRange.tsx',
