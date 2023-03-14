@@ -29,6 +29,12 @@ import ColdBigIcon from "./assets/icons/SVG/ColdBigIcon";
 import CardProfileS from "./components/molecules/CardProfileS";
 import ViewMenuItem from "./components/molecules/Navigation/drawer/ViewMenuItem";
 import BottomModalPicker from "./components/molecules/Pickers/BottomModalPicker/BottomModalPicker";
+import GenericPicker from "./components/molecules/Pickers/GenericPicker";
+import Dash from "./components/atoms/Dash/Dash";
+import DashboardTextWithIcon from "./components/atoms/LocalText/DashboardTextWithIcon";
+import LocalTextWithIcon from "./components/atoms/LocalText/LocalTextWithIcon";
+import SeparatorLine from "./components/atoms/SeparatorLine/SeparatorLine";
+import Expandable from "./components/molecules/Expandable";
 interface FormState {
   email: string;
   password: string;
@@ -138,6 +144,36 @@ function App() {
             <LocalText color="ACCENT_PRIMARY_REGULAR" size="BodyM">
               {"TEST TEXT"}
             </LocalText>
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            DASHBOARD
+            <br />
+            TextWithIcon
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component">
+            <DashboardTextWithIcon Icon={DometicIcon} text={"EXAMPLE"} />
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            LocalText
+            <br />
+            WithIcon
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component">
+            <LocalTextWithIcon Icon={DometicIcon} iconColor='ACCENT_PRIMARY_REGULAR' iconSize={40} color="ACCENT_PRIMARY_REGULAR" size="BodyM" >
+              EXAMPLE TEXT
+            </LocalTextWithIcon>
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Separator Line
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component">
+            <SeparatorLine color='ACCENT_PRIMARY_REGULAR' height={1}/>
           </div>
           <Spacer size={30} />
           <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
@@ -355,8 +391,8 @@ function App() {
           <Spacer size={10} />
           <div className="component-column">
             <ViewMenuItem
-              label={'Menu item'}
-              route={'/devices-stack'}
+              label={"Menu item"}
+              route={"/devices-stack"}
               navigation={null}
             />
           </div>
@@ -368,8 +404,35 @@ function App() {
           <Spacer size={10} />
           <div className="component-column">
             <BottomModalPicker ref={refBottomSheet}/>
+            <GenericPicker
+              data={[
+                { label: "a", value: 1 },
+                { label: "b", value: 2 },
+                { label: "c", value: 3 },
+              ]}
+              value={"a"}
+              setValue={(args) => console.log("PRESSED: ", args)}
+            />
           </div>
           <Spacer size={30} /> */}
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            DASH
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component-column">
+            <Dash />
+          </div>
+          <Spacer size={30} />
+          <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
+            Expandable
+          </LocalText>
+          <Spacer size={10} />
+          <div className="component-column">
+            <Expandable elementId='id' label='not expaded' labelExpanded="expanded" >
+              <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">EXPANDED CHILD</LocalText>
+            </Expandable>
+          </div>
+          <Spacer size={30} />
         </div>
       </div>
     </div>

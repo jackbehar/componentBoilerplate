@@ -8,7 +8,6 @@ interface Props {
   style?: StyleProp<Omit<ViewStyle, 'backgroundColor'>>;
   dashColor?: ProjectColorsType;
 }
-
 function Dash({style, dashColor = 'TEXT_NEUTRAL'}: Props) {
   const theme = useAppSelector(state => state.theme.theme);
   const bColor = React.useMemo(

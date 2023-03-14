@@ -1,14 +1,11 @@
 import React from 'react';
 import {View, ViewStyle} from 'react-native';
-import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withTiming,
-} from 'react-native-reanimated';
+
 import TemperatureInsideIcon from '../../../../assets/icons/SVG/TemperatureInsideIcon';
-import {useAppSelector} from '../../../../hook/useAppSelector';
-import {TEMPERATURE_UNITS} from '../../../../shared/utility/temperature';
-import {IconProps} from '../../../../types/icons';
+import {
+  TemperatureUnit,
+  TEMPERATURE_UNITS,
+} from '../../../../shared/utility/temperature';
 import LocalText from '../../../atoms/LocalText/LocalText';
 import {RangeInfoWidgetIconProps} from '../RangeInfoWidget/RangeInfoWidget';
 import RangeInfoStyles from './RangeInfoStyles';
@@ -19,7 +16,7 @@ interface Props {
   subtitle: string;
   size: number;
   disabled?: boolean;
-  IconProps: RangeInfoWidgetIconProps | undefined;
+  IconProps?: RangeInfoWidgetIconProps | undefined;
   temperature?: boolean;
 }
 
@@ -32,8 +29,10 @@ function RangeInfo({
   IconProps,
   disabled,
 }: Props) {
-  const unit = useAppSelector(state => state.setting.unit);
-  const temperatureUnit = React.useMemo(() => TEMPERATURE_UNITS[unit], [unit]);
+  const temperatureUnit = React.useMemo(
+    () => TEMPERATURE_UNITS[TemperatureUnit.CELSIUS],
+    [],
+  );
 
   const style: ViewStyle = React.useMemo(
     () => ({width: size, height: size, borderRadius: size / 2}),
