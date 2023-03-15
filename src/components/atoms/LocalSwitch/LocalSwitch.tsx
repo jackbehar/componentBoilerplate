@@ -7,6 +7,7 @@ interface Props {
   value: boolean;
   onPress: () => void;
   disabled?: boolean;
+  ddm?:string;
 }
 
 function LocalSwitch({value, disabled, onPress}: Props) {

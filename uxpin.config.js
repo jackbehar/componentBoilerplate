@@ -38,7 +38,9 @@ module.exports = {
       {
         name: 'Widgets',
         include: [
+          'src/components/organisms/Range/AirQualityRangeBase/AirQualityRangeBase.tsx',
           'src/components/organisms/Range/TemperatureRange/TemperatureRange.tsx',
+          'src/components/organisms/Range/TemperatureSlider/TemperatureSlider.tsx',
           'src/components/organisms/Range/TemperatureWidgetRange/TemperatureWidgetRange.tsx',
         ],
       }

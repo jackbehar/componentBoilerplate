@@ -18,6 +18,7 @@ export interface LocalTextComponentProps extends LocalTextProps {
   size?: GlobalTextStyleType;
   withTranslation?: boolean;
   overrideTypography?: boolean;
+  ddm?: string;
 }
 
 function LocalText({
@@ -27,6 +28,7 @@ function LocalText({
   withTranslation = true,
   testID,
   overrideTypography,
+  ddm,
   ...rest
 }: LocalTextComponentProps) {
   const {t} = useTranslation();

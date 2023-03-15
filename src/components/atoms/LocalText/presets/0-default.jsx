@@ -6,6 +6,7 @@ export default (
     uxpId="local-text-1"
     color="TEXT_DARK"
     size="DisplayS"
+    ddm="Add DDM here"
     style={{}}>
     Local Text Component
   </LocalText>
@@ -18,5 +19,7 @@ LocalText.propTypes = {
    * @uxpincontroltype input
    * */
   children: PropTypes.node,
+
+  style: PropTypes.object,
   
 };
