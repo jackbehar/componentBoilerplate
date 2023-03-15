@@ -4,6 +4,7 @@ module.exports = {
       {
         name: 'Wrapped Integration',
         include: [
+          'src/components/atoms/Bluetooth/Bluetooth.js',
           'src/components/atoms/CheckBox/uxpin-merge/CheckBoxWrapped.tsx',
         ],
       },

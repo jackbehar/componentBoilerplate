@@ -35,6 +35,7 @@ import DashboardTextWithIcon from "./components/atoms/LocalText/DashboardTextWit
 import LocalTextWithIcon from "./components/atoms/LocalText/LocalTextWithIcon";
 import SeparatorLine from "./components/atoms/SeparatorLine/SeparatorLine";
 import Expandable from "./components/molecules/Expandable";
+import Bluetooth from "./components/atoms/Bluetooth/Bluetooth";
 interface FormState {
   email: string;
   password: string;
@@ -107,6 +108,7 @@ function App() {
           className="content"
           style={{ backgroundColor: colors[theme].LAYOUT_BACKGROUND }}
         >
+          <Bluetooth/>
           <LocalText color="ACCENT_PRIMARY_REGULAR" size="DisplayS">
             Local Switch
           </LocalText>
